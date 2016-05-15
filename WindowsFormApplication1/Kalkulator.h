@@ -52,6 +52,7 @@ namespace WindowsFormApplication1 {
 	private: System::Windows::Forms::Label^  label2;
 	private: System::Windows::Forms::Button^  button2;
 	private: System::Windows::Forms::Form^ otherform;
+	private: System::Windows::Forms::Label^  label3;
 
 	private:
 		/// <summary>
@@ -78,32 +79,33 @@ namespace WindowsFormApplication1 {
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->button2 = (gcnew System::Windows::Forms::Button());
+			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->groupBox1->SuspendLayout();
 			this->SuspendLayout();
 			// 
 			// textBox1
 			// 
-			this->textBox1->Location = System::Drawing::Point(9, 42);
-			this->textBox1->Margin = System::Windows::Forms::Padding(2);
+			this->textBox1->Location = System::Drawing::Point(12, 52);
+			this->textBox1->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(163, 20);
+			this->textBox1->Size = System::Drawing::Size(216, 22);
 			this->textBox1->TabIndex = 0;
 			// 
 			// textBox2
 			// 
-			this->textBox2->Location = System::Drawing::Point(214, 42);
-			this->textBox2->Margin = System::Windows::Forms::Padding(2);
+			this->textBox2->Location = System::Drawing::Point(286, 52);
+			this->textBox2->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->textBox2->Name = L"textBox2";
-			this->textBox2->Size = System::Drawing::Size(154, 20);
+			this->textBox2->Size = System::Drawing::Size(203, 22);
 			this->textBox2->TabIndex = 1;
 			// 
 			// button1
 			// 
 			this->button1->DialogResult = System::Windows::Forms::DialogResult::Cancel;
-			this->button1->Location = System::Drawing::Point(214, 80);
-			this->button1->Margin = System::Windows::Forms::Padding(2);
+			this->button1->Location = System::Drawing::Point(285, 98);
+			this->button1->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(100, 43);
+			this->button1->Size = System::Drawing::Size(133, 53);
 			this->button1->TabIndex = 2;
 			this->button1->Text = L"Policz";
 			this->button1->UseVisualStyleBackColor = true;
@@ -115,11 +117,11 @@ namespace WindowsFormApplication1 {
 			this->groupBox1->Controls->Add(this->radioButton3);
 			this->groupBox1->Controls->Add(this->radioButton2);
 			this->groupBox1->Controls->Add(this->radioButton1);
-			this->groupBox1->Location = System::Drawing::Point(9, 80);
-			this->groupBox1->Margin = System::Windows::Forms::Padding(2);
+			this->groupBox1->Location = System::Drawing::Point(12, 98);
+			this->groupBox1->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->groupBox1->Name = L"groupBox1";
-			this->groupBox1->Padding = System::Windows::Forms::Padding(2);
-			this->groupBox1->Size = System::Drawing::Size(97, 121);
+			this->groupBox1->Padding = System::Windows::Forms::Padding(3, 2, 3, 2);
+			this->groupBox1->Size = System::Drawing::Size(129, 149);
 			this->groupBox1->TabIndex = 3;
 			this->groupBox1->TabStop = false;
 			this->groupBox1->Text = L"Dzia³ania:";
@@ -127,68 +129,70 @@ namespace WindowsFormApplication1 {
 			// radioButton4
 			// 
 			this->radioButton4->AutoSize = true;
-			this->radioButton4->Location = System::Drawing::Point(4, 98);
-			this->radioButton4->Margin = System::Windows::Forms::Padding(2);
+			this->radioButton4->Location = System::Drawing::Point(5, 121);
+			this->radioButton4->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->radioButton4->Name = L"radioButton4";
-			this->radioButton4->Size = System::Drawing::Size(68, 17);
+			this->radioButton4->Size = System::Drawing::Size(87, 21);
 			this->radioButton4->TabIndex = 3;
 			this->radioButton4->TabStop = true;
 			this->radioButton4->Text = L"Dzielenie";
 			this->radioButton4->UseVisualStyleBackColor = true;
+			this->radioButton4->CheckedChanged += gcnew System::EventHandler(this, &Kalkulator::radioButton4_CheckedChanged);
 			// 
 			// radioButton3
 			// 
 			this->radioButton3->AutoSize = true;
-			this->radioButton3->Location = System::Drawing::Point(4, 76);
-			this->radioButton3->Margin = System::Windows::Forms::Padding(2);
+			this->radioButton3->Location = System::Drawing::Point(5, 94);
+			this->radioButton3->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->radioButton3->Name = L"radioButton3";
-			this->radioButton3->Size = System::Drawing::Size(71, 17);
+			this->radioButton3->Size = System::Drawing::Size(90, 21);
 			this->radioButton3->TabIndex = 2;
 			this->radioButton3->TabStop = true;
 			this->radioButton3->Text = L"Mnozenie";
 			this->radioButton3->UseVisualStyleBackColor = true;
+			this->radioButton3->CheckedChanged += gcnew System::EventHandler(this, &Kalkulator::radioButton3_CheckedChanged);
 			// 
 			// radioButton2
 			// 
 			this->radioButton2->AutoSize = true;
-			this->radioButton2->Location = System::Drawing::Point(4, 54);
-			this->radioButton2->Margin = System::Windows::Forms::Padding(2);
+			this->radioButton2->Location = System::Drawing::Point(5, 66);
+			this->radioButton2->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->radioButton2->Name = L"radioButton2";
-			this->radioButton2->Size = System::Drawing::Size(89, 17);
+			this->radioButton2->Size = System::Drawing::Size(114, 21);
 			this->radioButton2->TabIndex = 1;
 			this->radioButton2->TabStop = true;
 			this->radioButton2->Text = L"Odejmowanie";
 			this->radioButton2->UseVisualStyleBackColor = true;
+			this->radioButton2->CheckedChanged += gcnew System::EventHandler(this, &Kalkulator::radioButton2_CheckedChanged);
 			// 
 			// radioButton1
 			// 
 			this->radioButton1->AutoSize = true;
-			this->radioButton1->Location = System::Drawing::Point(4, 32);
-			this->radioButton1->Margin = System::Windows::Forms::Padding(2);
+			this->radioButton1->Location = System::Drawing::Point(5, 41);
+			this->radioButton1->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->radioButton1->Name = L"radioButton1";
-			this->radioButton1->Size = System::Drawing::Size(79, 17);
+			this->radioButton1->Size = System::Drawing::Size(99, 21);
 			this->radioButton1->TabIndex = 0;
 			this->radioButton1->TabStop = true;
 			this->radioButton1->Text = L"Dodawanie";
 			this->radioButton1->UseVisualStyleBackColor = true;
+			this->radioButton1->CheckedChanged += gcnew System::EventHandler(this, &Kalkulator::radioButton1_CheckedChanged);
 			// 
 			// label1
 			// 
 			this->label1->AutoSize = true;
-			this->label1->Location = System::Drawing::Point(212, 137);
-			this->label1->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label1->Location = System::Drawing::Point(283, 169);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(40, 13);
+			this->label1->Size = System::Drawing::Size(50, 17);
 			this->label1->TabIndex = 4;
 			this->label1->Text = L"Wynik:";
 			// 
 			// label2
 			// 
 			this->label2->AutoSize = true;
-			this->label2->Location = System::Drawing::Point(214, 156);
-			this->label2->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label2->Location = System::Drawing::Point(285, 192);
 			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(0, 13);
+			this->label2->Size = System::Drawing::Size(0, 17);
 			this->label2->TabIndex = 5;
 			// 
 			// button2
@@ -198,19 +202,31 @@ namespace WindowsFormApplication1 {
 			this->button2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(238)));
 			this->button2->Location = System::Drawing::Point(0, 0);
+			this->button2->Margin = System::Windows::Forms::Padding(4);
 			this->button2->Name = L"button2";
-			this->button2->Size = System::Drawing::Size(33, 24);
+			this->button2->Size = System::Drawing::Size(44, 30);
 			this->button2->TabIndex = 6;
 			this->button2->Text = L"<--";
 			this->button2->UseVisualStyleBackColor = false;
 			this->button2->Click += gcnew System::EventHandler(this, &Kalkulator::button2_Click);
 			// 
+			// label3
+			// 
+			this->label3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(238)));
+			this->label3->Location = System::Drawing::Point(240, 55);
+			this->label3->Name = L"label3";
+			this->label3->Size = System::Drawing::Size(37, 19);
+			this->label3->TabIndex = 7;
+			this->label3->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
 			// Kalkulator
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
+			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(381, 240);
+			this->ClientSize = System::Drawing::Size(508, 295);
 			this->ControlBox = false;
+			this->Controls->Add(this->label3);
 			this->Controls->Add(this->button2);
 			this->Controls->Add(this->label2);
 			this->Controls->Add(this->label1);
@@ -219,7 +235,8 @@ namespace WindowsFormApplication1 {
 			this->Controls->Add(this->textBox2);
 			this->Controls->Add(this->textBox1);
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
-			this->Margin = System::Windows::Forms::Padding(2);
+			this->Location = System::Drawing::Point(55, 25);
+			this->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->Name = L"Kalkulator";
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterParent;
 			this->Text = L"Kalkulator";
@@ -242,7 +259,6 @@ namespace WindowsFormApplication1 {
 			{
 				label2->Text = "B³¹d";
 			}
-
 		}
 		else if (radioButton2->Checked)
 		{
@@ -254,7 +270,6 @@ namespace WindowsFormApplication1 {
 			{
 				label2->Text = "B³¹d";
 			}
-
 		}
 		if (radioButton3->Checked)
 		{
@@ -266,9 +281,7 @@ namespace WindowsFormApplication1 {
 			{
 				label2->Text = "B³¹d";
 			}
-
 		}
-
 		if (radioButton4->Checked)
 		{
 			try
@@ -279,13 +292,23 @@ namespace WindowsFormApplication1 {
 			{
 				label2->Text = "B³¹d";
 			}
-
 		}
-
 	}
 	private: System::Void button2_Click(System::Object^  sender, System::EventArgs^  e) {
 		this->Close();
 		otherform->Show();
 	};
-	};
+	private: System::Void radioButton1_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
+		label3->Text = "+";
+	}
+	private: System::Void radioButton2_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
+		label3->Text = "-";
+	}
+	private: System::Void radioButton3_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
+		label3->Text = "*";
+	}
+	private: System::Void radioButton4_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
+		label3->Text = "/";
+	}
+};
 }

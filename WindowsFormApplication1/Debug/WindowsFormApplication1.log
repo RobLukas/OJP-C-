@@ -1,18 +1,18 @@
 ﻿cl : Command line warning D9035: option 'clr:pure' has been deprecated and will be removed in a future release
-  Form2.cpp
-d:\projects\ojp-c++\windowsformapplication1\Kalkulator.h(241): warning C4101: 'a': unreferenced local variable
-d:\projects\ojp-c++\windowsformapplication1\Kalkulator.h(253): warning C4101: 'a': unreferenced local variable
-d:\projects\ojp-c++\windowsformapplication1\Kalkulator.h(265): warning C4101: 'a': unreferenced local variable
-d:\projects\ojp-c++\windowsformapplication1\Kalkulator.h(278): warning C4101: 'a': unreferenced local variable
+  Wyznaczniki.cpp
+c:\projects\ojp-c++\windowsformapplication1\Kalkulator.h(258): warning C4101: 'a': unreferenced local variable
+c:\projects\ojp-c++\windowsformapplication1\Kalkulator.h(269): warning C4101: 'a': unreferenced local variable
+c:\projects\ojp-c++\windowsformapplication1\Kalkulator.h(280): warning C4101: 'a': unreferenced local variable
+c:\projects\ojp-c++\windowsformapplication1\Kalkulator.h(291): warning C4101: 'a': unreferenced local variable
   MenuProgram.cpp
-d:\projects\ojp-c++\windowsformapplication1\Kalkulator.h(241): warning C4101: 'a': unreferenced local variable
-d:\projects\ojp-c++\windowsformapplication1\Kalkulator.h(253): warning C4101: 'a': unreferenced local variable
-d:\projects\ojp-c++\windowsformapplication1\Kalkulator.h(265): warning C4101: 'a': unreferenced local variable
-d:\projects\ojp-c++\windowsformapplication1\Kalkulator.h(278): warning C4101: 'a': unreferenced local variable
+c:\projects\ojp-c++\windowsformapplication1\Kalkulator.h(258): warning C4101: 'a': unreferenced local variable
+c:\projects\ojp-c++\windowsformapplication1\Kalkulator.h(269): warning C4101: 'a': unreferenced local variable
+c:\projects\ojp-c++\windowsformapplication1\Kalkulator.h(280): warning C4101: 'a': unreferenced local variable
+c:\projects\ojp-c++\windowsformapplication1\Kalkulator.h(291): warning C4101: 'a': unreferenced local variable
   WindowsFormApplication1.cpp
-d:\projects\ojp-c++\windowsformapplication1\Kalkulator.h(241): warning C4101: 'a': unreferenced local variable
-d:\projects\ojp-c++\windowsformapplication1\Kalkulator.h(253): warning C4101: 'a': unreferenced local variable
-d:\projects\ojp-c++\windowsformapplication1\Kalkulator.h(265): warning C4101: 'a': unreferenced local variable
-d:\projects\ojp-c++\windowsformapplication1\Kalkulator.h(278): warning C4101: 'a': unreferenced local variable
+c:\projects\ojp-c++\windowsformapplication1\Kalkulator.h(258): warning C4101: 'a': unreferenced local variable
+c:\projects\ojp-c++\windowsformapplication1\Kalkulator.h(269): warning C4101: 'a': unreferenced local variable
+c:\projects\ojp-c++\windowsformapplication1\Kalkulator.h(280): warning C4101: 'a': unreferenced local variable
+c:\projects\ojp-c++\windowsformapplication1\Kalkulator.h(291): warning C4101: 'a': unreferenced local variable
   Generating Code...
-  WindowsFormApplication1.vcxproj -> D:\Projects\OJP-C++\Debug\WindowsFormApplication1.exe
+  WindowsFormApplication1.vcxproj -> C:\Projects\OJP-C++\Debug\WindowsFormApplication1.exe
