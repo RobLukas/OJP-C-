@@ -1,7 +1,9 @@
 // WindowsFormApplication1.cpp : main project file.
 
 #include "stdafx.h"
-#include "Form1.h"
+#include "Kalkulator.h"
+#include "Wyznaczniki.h"
+#include "MenuProgram.h"
 
 using namespace WindowsFormApplication1;
 
@@ -13,6 +15,7 @@ int main(array<System::String ^> ^args)
 	Application::SetCompatibleTextRenderingDefault(false); 
 
 	// Create the main window and run it
-	Application::Run(gcnew Form1());
+	Application::Run(gcnew MenuProgram());
+
 	return 0;
 }
