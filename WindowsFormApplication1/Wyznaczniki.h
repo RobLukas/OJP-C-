@@ -46,22 +46,29 @@ namespace WindowsFormApplication1 {
 	private: System::Windows::Forms::Button^  Return;
 	private: System::Windows::Forms::Form^ otherform;
 	private: System::Windows::Forms::Label^  label1;
-	private: System::Windows::Forms::TextBox^  textBox1;
-	private: System::Windows::Forms::TextBox^  textBox2;
-	private: System::Windows::Forms::TextBox^  textBox3;
-	private: System::Windows::Forms::TextBox^  textBox4;
-	private: System::Windows::Forms::TextBox^  textBox5;
-	private: System::Windows::Forms::TextBox^  textBox6;
-	private: System::Windows::Forms::TextBox^  textBox7;
-	private: System::Windows::Forms::TextBox^  textBox8;
-	private: System::Windows::Forms::TextBox^  textBox9;
-	private: System::Windows::Forms::TextBox^  textBox10;
-	private: System::Windows::Forms::TextBox^  textBox11;
-	private: System::Windows::Forms::TextBox^  textBox12;
-	private: System::Windows::Forms::TextBox^  textBox13;
-	private: System::Windows::Forms::TextBox^  textBox14;
-	private: System::Windows::Forms::TextBox^  textBox15;
-	private: System::Windows::Forms::TextBox^  textBox16;
+	private: System::Windows::Forms::TextBox^  W1;
+	private: System::Windows::Forms::TextBox^  W2_3;
+	private: System::Windows::Forms::TextBox^  W3_5;
+	private: System::Windows::Forms::TextBox^  W4_7;
+	private: System::Windows::Forms::TextBox^  W2_1;
+	private: System::Windows::Forms::TextBox^  W2_2;
+	private: System::Windows::Forms::TextBox^  W3_4;
+	private: System::Windows::Forms::TextBox^  W4_6;
+	private: System::Windows::Forms::TextBox^  W3_1;
+	private: System::Windows::Forms::TextBox^  W3_2;
+	private: System::Windows::Forms::TextBox^  W3_3;
+	private: System::Windows::Forms::TextBox^  W4_5;
+	private: System::Windows::Forms::TextBox^  W4_2;
+	private: System::Windows::Forms::TextBox^  W4_3;
+	private: System::Windows::Forms::TextBox^  W4_1;
+	private: System::Windows::Forms::TextBox^  W4_4;
+	private: System::Windows::Forms::GroupBox^  groupBox1;
+	private: System::Windows::Forms::RadioButton^  radioButton4;
+	private: System::Windows::Forms::RadioButton^  radioButton3;
+	private: System::Windows::Forms::RadioButton^  radioButton2;
+	private: System::Windows::Forms::RadioButton^  radioButton1;
+	private: System::Windows::Forms::Button^  button1;
+	private: System::Windows::Forms::Label^  label2;
 
 	private:
 		System::ComponentModel::Container ^components;
@@ -76,22 +83,30 @@ namespace WindowsFormApplication1 {
 			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(Wyznaczniki::typeid));
 			this->Return = (gcnew System::Windows::Forms::Button());
 			this->label1 = (gcnew System::Windows::Forms::Label());
-			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
-			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
-			this->textBox3 = (gcnew System::Windows::Forms::TextBox());
-			this->textBox4 = (gcnew System::Windows::Forms::TextBox());
-			this->textBox5 = (gcnew System::Windows::Forms::TextBox());
-			this->textBox6 = (gcnew System::Windows::Forms::TextBox());
-			this->textBox7 = (gcnew System::Windows::Forms::TextBox());
-			this->textBox8 = (gcnew System::Windows::Forms::TextBox());
-			this->textBox9 = (gcnew System::Windows::Forms::TextBox());
-			this->textBox10 = (gcnew System::Windows::Forms::TextBox());
-			this->textBox11 = (gcnew System::Windows::Forms::TextBox());
-			this->textBox12 = (gcnew System::Windows::Forms::TextBox());
-			this->textBox13 = (gcnew System::Windows::Forms::TextBox());
-			this->textBox14 = (gcnew System::Windows::Forms::TextBox());
-			this->textBox15 = (gcnew System::Windows::Forms::TextBox());
-			this->textBox16 = (gcnew System::Windows::Forms::TextBox());
+			this->W1 = (gcnew System::Windows::Forms::TextBox());
+			this->W2_3 = (gcnew System::Windows::Forms::TextBox());
+			this->W3_5 = (gcnew System::Windows::Forms::TextBox());
+			this->W4_7 = (gcnew System::Windows::Forms::TextBox());
+			this->W2_1 = (gcnew System::Windows::Forms::TextBox());
+			this->W2_2 = (gcnew System::Windows::Forms::TextBox());
+			this->W3_4 = (gcnew System::Windows::Forms::TextBox());
+			this->W4_6 = (gcnew System::Windows::Forms::TextBox());
+			this->W3_1 = (gcnew System::Windows::Forms::TextBox());
+			this->W3_2 = (gcnew System::Windows::Forms::TextBox());
+			this->W3_3 = (gcnew System::Windows::Forms::TextBox());
+			this->W4_5 = (gcnew System::Windows::Forms::TextBox());
+			this->W4_2 = (gcnew System::Windows::Forms::TextBox());
+			this->W4_3 = (gcnew System::Windows::Forms::TextBox());
+			this->W4_1 = (gcnew System::Windows::Forms::TextBox());
+			this->W4_4 = (gcnew System::Windows::Forms::TextBox());
+			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
+			this->radioButton4 = (gcnew System::Windows::Forms::RadioButton());
+			this->radioButton3 = (gcnew System::Windows::Forms::RadioButton());
+			this->radioButton2 = (gcnew System::Windows::Forms::RadioButton());
+			this->radioButton1 = (gcnew System::Windows::Forms::RadioButton());
+			this->button1 = (gcnew System::Windows::Forms::Button());
+			this->label2 = (gcnew System::Windows::Forms::Label());
+			this->groupBox1->SuspendLayout();
 			this->SuspendLayout();
 			// 
 			// Return
@@ -101,9 +116,8 @@ namespace WindowsFormApplication1 {
 			this->Return->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(238)));
 			this->Return->Location = System::Drawing::Point(0, 0);
-			this->Return->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->Return->Name = L"Return";
-			this->Return->Size = System::Drawing::Size(44, 30);
+			this->Return->Size = System::Drawing::Size(33, 24);
 			this->Return->TabIndex = 7;
 			this->Return->Text = L"<--";
 			this->Return->UseVisualStyleBackColor = false;
@@ -112,168 +126,263 @@ namespace WindowsFormApplication1 {
 			// label1
 			// 
 			this->label1->AutoSize = true;
-			this->label1->Location = System::Drawing::Point(154, 250);
+			this->label1->Location = System::Drawing::Point(115, 203);
+			this->label1->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(50, 17);
+			this->label1->Size = System::Drawing::Size(40, 13);
 			this->label1->TabIndex = 8;
 			this->label1->Text = L"Wynik:";
 			// 
-			// textBox1
+			// W1
 			// 
-			this->textBox1->Location = System::Drawing::Point(157, 65);
-			this->textBox1->Multiline = true;
-			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(66, 28);
-			this->textBox1->TabIndex = 9;
+			this->W1->Location = System::Drawing::Point(118, 53);
+			this->W1->Margin = System::Windows::Forms::Padding(2);
+			this->W1->Name = L"W1";
+			this->W1->Size = System::Drawing::Size(50, 20);
+			this->W1->TabIndex = 1;
+			this->W1->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
 			// 
-			// textBox2
+			// W2_3
 			// 
-			this->textBox2->Location = System::Drawing::Point(229, 65);
-			this->textBox2->Multiline = true;
-			this->textBox2->Name = L"textBox2";
-			this->textBox2->Size = System::Drawing::Size(66, 28);
-			this->textBox2->TabIndex = 10;
+			this->W2_3->Location = System::Drawing::Point(172, 53);
+			this->W2_3->Margin = System::Windows::Forms::Padding(2);
+			this->W2_3->Name = L"W2_3";
+			this->W2_3->Size = System::Drawing::Size(50, 20);
+			this->W2_3->TabIndex = 4;
+			this->W2_3->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
 			// 
-			// textBox3
+			// W3_5
 			// 
-			this->textBox3->Location = System::Drawing::Point(301, 65);
-			this->textBox3->Multiline = true;
-			this->textBox3->Name = L"textBox3";
-			this->textBox3->Size = System::Drawing::Size(66, 28);
-			this->textBox3->TabIndex = 11;
+			this->W3_5->Location = System::Drawing::Point(226, 53);
+			this->W3_5->Margin = System::Windows::Forms::Padding(2);
+			this->W3_5->Name = L"W3_5";
+			this->W3_5->Size = System::Drawing::Size(50, 20);
+			this->W3_5->TabIndex = 9;
+			this->W3_5->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
 			// 
-			// textBox4
+			// W4_7
 			// 
-			this->textBox4->Location = System::Drawing::Point(157, 99);
-			this->textBox4->Multiline = true;
-			this->textBox4->Name = L"textBox4";
-			this->textBox4->Size = System::Drawing::Size(66, 28);
-			this->textBox4->TabIndex = 12;
+			this->W4_7->Location = System::Drawing::Point(280, 53);
+			this->W4_7->Margin = System::Windows::Forms::Padding(2);
+			this->W4_7->Name = L"W4_7";
+			this->W4_7->Size = System::Drawing::Size(50, 20);
+			this->W4_7->TabIndex = 7;
+			this->W4_7->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
 			// 
-			// textBox5
+			// W2_1
 			// 
-			this->textBox5->Location = System::Drawing::Point(229, 99);
-			this->textBox5->Multiline = true;
-			this->textBox5->Name = L"textBox5";
-			this->textBox5->Size = System::Drawing::Size(66, 28);
-			this->textBox5->TabIndex = 13;
+			this->W2_1->Location = System::Drawing::Point(118, 81);
+			this->W2_1->Margin = System::Windows::Forms::Padding(2);
+			this->W2_1->Name = L"W2_1";
+			this->W2_1->Size = System::Drawing::Size(50, 20);
+			this->W2_1->TabIndex = 2;
+			this->W2_1->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
 			// 
-			// textBox6
+			// W2_2
 			// 
-			this->textBox6->Location = System::Drawing::Point(301, 99);
-			this->textBox6->Multiline = true;
-			this->textBox6->Name = L"textBox6";
-			this->textBox6->Size = System::Drawing::Size(66, 28);
-			this->textBox6->TabIndex = 14;
+			this->W2_2->Location = System::Drawing::Point(172, 80);
+			this->W2_2->Margin = System::Windows::Forms::Padding(2);
+			this->W2_2->Name = L"W2_2";
+			this->W2_2->Size = System::Drawing::Size(50, 20);
+			this->W2_2->TabIndex = 3;
+			this->W2_2->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
 			// 
-			// textBox7
+			// W3_4
 			// 
-			this->textBox7->Location = System::Drawing::Point(157, 133);
-			this->textBox7->Multiline = true;
-			this->textBox7->Name = L"textBox7";
-			this->textBox7->Size = System::Drawing::Size(66, 28);
-			this->textBox7->TabIndex = 15;
+			this->W3_4->Location = System::Drawing::Point(226, 80);
+			this->W3_4->Margin = System::Windows::Forms::Padding(2);
+			this->W3_4->Name = L"W3_4";
+			this->W3_4->Size = System::Drawing::Size(50, 20);
+			this->W3_4->TabIndex = 8;
+			this->W3_4->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
 			// 
-			// textBox8
+			// W4_6
 			// 
-			this->textBox8->Location = System::Drawing::Point(229, 133);
-			this->textBox8->Multiline = true;
-			this->textBox8->Name = L"textBox8";
-			this->textBox8->Size = System::Drawing::Size(66, 28);
-			this->textBox8->TabIndex = 16;
+			this->W4_6->Location = System::Drawing::Point(280, 80);
+			this->W4_6->Margin = System::Windows::Forms::Padding(2);
+			this->W4_6->Name = L"W4_6";
+			this->W4_6->Size = System::Drawing::Size(50, 20);
+			this->W4_6->TabIndex = 15;
+			this->W4_6->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
 			// 
-			// textBox9
+			// W3_1
 			// 
-			this->textBox9->Location = System::Drawing::Point(301, 133);
-			this->textBox9->Multiline = true;
-			this->textBox9->Name = L"textBox9";
-			this->textBox9->Size = System::Drawing::Size(66, 28);
-			this->textBox9->TabIndex = 17;
+			this->W3_1->Location = System::Drawing::Point(118, 108);
+			this->W3_1->Margin = System::Windows::Forms::Padding(2);
+			this->W3_1->Name = L"W3_1";
+			this->W3_1->Size = System::Drawing::Size(50, 20);
+			this->W3_1->TabIndex = 5;
+			this->W3_1->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
 			// 
-			// textBox10
+			// W3_2
 			// 
-			this->textBox10->Location = System::Drawing::Point(301, 167);
-			this->textBox10->Multiline = true;
-			this->textBox10->Name = L"textBox10";
-			this->textBox10->Size = System::Drawing::Size(66, 28);
-			this->textBox10->TabIndex = 18;
+			this->W3_2->Location = System::Drawing::Point(172, 108);
+			this->W3_2->Margin = System::Windows::Forms::Padding(2);
+			this->W3_2->Name = L"W3_2";
+			this->W3_2->Size = System::Drawing::Size(50, 20);
+			this->W3_2->TabIndex = 6;
+			this->W3_2->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
 			// 
-			// textBox11
+			// W3_3
 			// 
-			this->textBox11->Location = System::Drawing::Point(229, 167);
-			this->textBox11->Multiline = true;
-			this->textBox11->Name = L"textBox11";
-			this->textBox11->Size = System::Drawing::Size(66, 28);
-			this->textBox11->TabIndex = 19;
+			this->W3_3->Location = System::Drawing::Point(226, 108);
+			this->W3_3->Margin = System::Windows::Forms::Padding(2);
+			this->W3_3->Name = L"W3_3";
+			this->W3_3->Size = System::Drawing::Size(50, 20);
+			this->W3_3->TabIndex = 7;
+			this->W3_3->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
 			// 
-			// textBox12
+			// W4_5
 			// 
-			this->textBox12->Location = System::Drawing::Point(157, 167);
-			this->textBox12->Multiline = true;
-			this->textBox12->Name = L"textBox12";
-			this->textBox12->Size = System::Drawing::Size(66, 28);
-			this->textBox12->TabIndex = 20;
+			this->W4_5->Location = System::Drawing::Point(280, 108);
+			this->W4_5->Margin = System::Windows::Forms::Padding(2);
+			this->W4_5->Name = L"W4_5";
+			this->W4_5->Size = System::Drawing::Size(50, 20);
+			this->W4_5->TabIndex = 14;
+			this->W4_5->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
 			// 
-			// textBox13
+			// W4_2
 			// 
-			this->textBox13->Location = System::Drawing::Point(373, 65);
-			this->textBox13->Multiline = true;
-			this->textBox13->Name = L"textBox13";
-			this->textBox13->Size = System::Drawing::Size(66, 28);
-			this->textBox13->TabIndex = 21;
+			this->W4_2->Location = System::Drawing::Point(172, 136);
+			this->W4_2->Margin = System::Windows::Forms::Padding(2);
+			this->W4_2->Name = L"W4_2";
+			this->W4_2->Size = System::Drawing::Size(50, 20);
+			this->W4_2->TabIndex = 11;
+			this->W4_2->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
 			// 
-			// textBox14
+			// W4_3
 			// 
-			this->textBox14->Location = System::Drawing::Point(373, 99);
-			this->textBox14->Multiline = true;
-			this->textBox14->Name = L"textBox14";
-			this->textBox14->Size = System::Drawing::Size(66, 28);
-			this->textBox14->TabIndex = 22;
+			this->W4_3->Location = System::Drawing::Point(226, 136);
+			this->W4_3->Margin = System::Windows::Forms::Padding(2);
+			this->W4_3->Name = L"W4_3";
+			this->W4_3->Size = System::Drawing::Size(50, 20);
+			this->W4_3->TabIndex = 12;
+			this->W4_3->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
 			// 
-			// textBox15
+			// W4_1
 			// 
-			this->textBox15->Location = System::Drawing::Point(373, 133);
-			this->textBox15->Multiline = true;
-			this->textBox15->Name = L"textBox15";
-			this->textBox15->Size = System::Drawing::Size(66, 28);
-			this->textBox15->TabIndex = 23;
+			this->W4_1->Location = System::Drawing::Point(118, 136);
+			this->W4_1->Margin = System::Windows::Forms::Padding(2);
+			this->W4_1->Name = L"W4_1";
+			this->W4_1->Size = System::Drawing::Size(50, 20);
+			this->W4_1->TabIndex = 10;
+			this->W4_1->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
 			// 
-			// textBox16
+			// W4_4
 			// 
-			this->textBox16->Location = System::Drawing::Point(373, 167);
-			this->textBox16->Multiline = true;
-			this->textBox16->Name = L"textBox16";
-			this->textBox16->Size = System::Drawing::Size(66, 28);
-			this->textBox16->TabIndex = 24;
+			this->W4_4->Location = System::Drawing::Point(280, 136);
+			this->W4_4->Margin = System::Windows::Forms::Padding(2);
+			this->W4_4->Name = L"W4_4";
+			this->W4_4->Size = System::Drawing::Size(50, 20);
+			this->W4_4->TabIndex = 13;
+			this->W4_4->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
+			// 
+			// groupBox1
+			// 
+			this->groupBox1->Controls->Add(this->radioButton4);
+			this->groupBox1->Controls->Add(this->radioButton3);
+			this->groupBox1->Controls->Add(this->radioButton2);
+			this->groupBox1->Controls->Add(this->radioButton1);
+			this->groupBox1->Location = System::Drawing::Point(12, 53);
+			this->groupBox1->Name = L"groupBox1";
+			this->groupBox1->Size = System::Drawing::Size(90, 120);
+			this->groupBox1->TabIndex = 25;
+			this->groupBox1->TabStop = false;
+			this->groupBox1->Text = L"Dzialania:";
+			// 
+			// radioButton4
+			// 
+			this->radioButton4->AutoSize = true;
+			this->radioButton4->Location = System::Drawing::Point(6, 96);
+			this->radioButton4->Name = L"radioButton4";
+			this->radioButton4->Size = System::Drawing::Size(68, 17);
+			this->radioButton4->TabIndex = 30;
+			this->radioButton4->Text = L"4 stopnia";
+			this->radioButton4->UseVisualStyleBackColor = true;
+			this->radioButton4->CheckedChanged += gcnew System::EventHandler(this, &Wyznaczniki::radioButton4_CheckedChanged);
+			// 
+			// radioButton3
+			// 
+			this->radioButton3->AutoSize = true;
+			this->radioButton3->Location = System::Drawing::Point(6, 73);
+			this->radioButton3->Name = L"radioButton3";
+			this->radioButton3->Size = System::Drawing::Size(68, 17);
+			this->radioButton3->TabIndex = 29;
+			this->radioButton3->Text = L"3 stopnia";
+			this->radioButton3->UseVisualStyleBackColor = true;
+			this->radioButton3->CheckedChanged += gcnew System::EventHandler(this, &Wyznaczniki::radioButton3_CheckedChanged);
+			// 
+			// radioButton2
+			// 
+			this->radioButton2->AutoSize = true;
+			this->radioButton2->Location = System::Drawing::Point(6, 50);
+			this->radioButton2->Name = L"radioButton2";
+			this->radioButton2->Size = System::Drawing::Size(68, 17);
+			this->radioButton2->TabIndex = 28;
+			this->radioButton2->Text = L"2 stopnia";
+			this->radioButton2->UseVisualStyleBackColor = true;
+			this->radioButton2->CheckedChanged += gcnew System::EventHandler(this, &Wyznaczniki::radioButton2_CheckedChanged);
+			// 
+			// radioButton1
+			// 
+			this->radioButton1->AutoSize = true;
+			this->radioButton1->Location = System::Drawing::Point(6, 27);
+			this->radioButton1->Name = L"radioButton1";
+			this->radioButton1->Size = System::Drawing::Size(68, 17);
+			this->radioButton1->TabIndex = 27;
+			this->radioButton1->Text = L"1 stopnia";
+			this->radioButton1->UseVisualStyleBackColor = true;
+			this->radioButton1->CheckedChanged += gcnew System::EventHandler(this, &Wyznaczniki::radioButton1_CheckedChanged);
+			// 
+			// button1
+			// 
+			this->button1->Location = System::Drawing::Point(311, 188);
+			this->button1->Name = L"button1";
+			this->button1->Size = System::Drawing::Size(90, 43);
+			this->button1->TabIndex = 26;
+			this->button1->Text = L"Policz";
+			this->button1->UseVisualStyleBackColor = true;
+			// 
+			// label2
+			// 
+			this->label2->AutoSize = true;
+			this->label2->Location = System::Drawing::Point(160, 203);
+			this->label2->Name = L"label2";
+			this->label2->Size = System::Drawing::Size(0, 13);
+			this->label2->TabIndex = 0;
 			// 
 			// Wyznaczniki
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
+			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(619, 311);
+			this->ClientSize = System::Drawing::Size(413, 253);
 			this->ControlBox = false;
-			this->Controls->Add(this->textBox16);
-			this->Controls->Add(this->textBox15);
-			this->Controls->Add(this->textBox14);
-			this->Controls->Add(this->textBox13);
-			this->Controls->Add(this->textBox12);
-			this->Controls->Add(this->textBox11);
-			this->Controls->Add(this->textBox10);
-			this->Controls->Add(this->textBox9);
-			this->Controls->Add(this->textBox8);
-			this->Controls->Add(this->textBox7);
-			this->Controls->Add(this->textBox6);
-			this->Controls->Add(this->textBox5);
-			this->Controls->Add(this->textBox4);
-			this->Controls->Add(this->textBox3);
-			this->Controls->Add(this->textBox2);
-			this->Controls->Add(this->textBox1);
+			this->Controls->Add(this->label2);
+			this->Controls->Add(this->button1);
+			this->Controls->Add(this->groupBox1);
+			this->Controls->Add(this->W4_4);
+			this->Controls->Add(this->W4_1);
+			this->Controls->Add(this->W4_3);
+			this->Controls->Add(this->W4_2);
+			this->Controls->Add(this->W4_5);
+			this->Controls->Add(this->W3_3);
+			this->Controls->Add(this->W3_2);
+			this->Controls->Add(this->W3_1);
+			this->Controls->Add(this->W4_6);
+			this->Controls->Add(this->W3_4);
+			this->Controls->Add(this->W2_2);
+			this->Controls->Add(this->W2_1);
+			this->Controls->Add(this->W4_7);
+			this->Controls->Add(this->W3_5);
+			this->Controls->Add(this->W2_3);
+			this->Controls->Add(this->W1);
 			this->Controls->Add(this->label1);
 			this->Controls->Add(this->Return);
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
-			this->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->Name = L"Wyznaczniki";
 			this->Text = L"Wyznaczniki";
+			this->groupBox1->ResumeLayout(false);
+			this->groupBox1->PerformLayout();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
@@ -283,5 +392,190 @@ namespace WindowsFormApplication1 {
 		this->Close();
 		otherform->Show();
 	}
-	};
+	private: System::Void radioButton1_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
+		W2_1->Visible = false;
+		W2_2->Visible = false;
+		W2_3->Visible = false;
+		W3_1->Visible = false;
+		W3_2->Visible = false;
+		W3_3->Visible = false;
+		W3_4->Visible = false;
+		W3_5->Visible = false;
+		W4_1->Visible = false;
+		W4_2->Visible = false;
+		W4_3->Visible = false;
+		W4_4->Visible = false;
+		W4_5->Visible = false;
+		W4_6->Visible = false;
+		W4_7->Visible = false;
+
+		W1->Text = "";
+		W2_1->Text = "";
+		W2_2->Text = "";
+		W2_3->Text = "";
+		W3_1->Text = "";
+		W3_2->Text = "";
+		W3_3->Text = "";
+		W3_4->Text = "";
+		W3_5->Text = "";
+		W4_1->Text = "";
+		W4_2->Text = "";
+		W4_3->Text = "";
+		W4_4->Text = "";
+		W4_5->Text = "";
+		W4_6->Text = "";
+		W4_7->Text = "";
+	}
+	private: System::Void radioButton2_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
+		W2_1->Visible = true;
+		W2_2->Visible = true;
+		W2_3->Visible = true;
+		W3_1->Visible = false;
+		W3_2->Visible = false;
+		W3_3->Visible = false;
+		W3_4->Visible = false;
+		W3_5->Visible = false;
+		W4_1->Visible = false;
+		W4_2->Visible = false;
+		W4_3->Visible = false;
+		W4_4->Visible = false;
+		W4_5->Visible = false;
+		W4_6->Visible = false;
+		W4_7->Visible = false;
+
+		W1->Text = "";
+		W2_1->Text = "";
+		W2_2->Text = "";
+		W2_3->Text = "";
+		W3_1->Text = "";
+		W3_2->Text = "";
+		W3_3->Text = "";
+		W3_4->Text = "";
+		W3_5->Text = "";
+		W4_1->Text = "";
+		W4_2->Text = "";
+		W4_3->Text = "";
+		W4_4->Text = "";
+		W4_5->Text = "";
+		W4_6->Text = "";
+		W4_7->Text = "";
+	}
+	private: System::Void radioButton3_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
+		W2_1->Visible = true;
+		W2_2->Visible = true;
+		W2_3->Visible = true;
+		W3_1->Visible = true;
+		W3_2->Visible = true;
+		W3_3->Visible = true;
+		W3_4->Visible = true;
+		W3_5->Visible = true;
+		W4_1->Visible = false;
+		W4_2->Visible = false;
+		W4_3->Visible = false;
+		W4_4->Visible = false;
+		W4_5->Visible = false;
+		W4_6->Visible = false;
+		W4_7->Visible = false;
+
+		W1->Text = "";
+		W2_1->Text = "";
+		W2_2->Text = "";
+		W2_3->Text = "";
+		W3_1->Text = "";
+		W3_2->Text = "";
+		W3_3->Text = "";
+		W3_4->Text = "";
+		W3_5->Text = "";
+		W4_1->Text = "";
+		W4_2->Text = "";
+		W4_3->Text = "";
+		W4_4->Text = "";
+		W4_5->Text = "";
+		W4_6->Text = "";
+		W4_7->Text = "";
+	}
+	private: System::Void radioButton4_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
+		W2_1->Visible = true;
+		W2_2->Visible = true;
+		W2_3->Visible = true;
+		W3_1->Visible = true;
+		W3_2->Visible = true;
+		W3_3->Visible = true;
+		W3_4->Visible = true;
+		W3_5->Visible = true;
+		W4_1->Visible = true;
+		W4_2->Visible = true;
+		W4_3->Visible = true;
+		W4_4->Visible = true;
+		W4_5->Visible = true;
+		W4_6->Visible = true;
+		W4_7->Visible = true;
+
+		W1->Text = "";
+		W2_1->Text = "";
+		W2_2->Text = "";
+		W2_3->Text = "";
+		W3_1->Text = "";
+		W3_2->Text = "";
+		W3_3->Text = "";
+		W3_4->Text = "";
+		W3_5->Text = "";
+		W4_1->Text = "";
+		W4_2->Text = "";
+		W4_3->Text = "";
+		W4_4->Text = "";
+		W4_5->Text = "";
+		W4_6->Text = "";
+		W4_7->Text = "";
+	}
+private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
+
+	if (radioButton1->Checked)
+	{
+
+		try
+		{
+			label2->Text = (Double::Parse(W1->Text)).ToString();
+		}
+		catch (Exception ^a)
+		{
+			label2->Text = "B³¹d";
+		}
+	}
+	else if (radioButton2->Checked)
+	{
+
+		try
+		{
+			label2->Text = ((Double::Parse(W1->Text) * (Double::Parse(W2_2->Text))) - (Double::Parse(W2_1->Text) * (Double::Parse(W2_3->Text)))).ToString();
+		}
+		catch (Exception ^a)
+		{
+			label2->Text = "B³¹d";
+		}
+	}
+	else if (radioButton3->Checked)
+	{
+		try
+		{
+			//label2->Text = 
+		}
+		catch (Exception ^a)
+		{
+			label2->Text = "B³¹d";
+		}
+	}
+	else if (radioButton4->Checked)
+	{
+		try
+		{
+			//label2->Text = 
+		}
+		catch (Exception ^a)
+		{
+			label2->Text = "B³¹d";
+		}
+	}
+}
+};
 }

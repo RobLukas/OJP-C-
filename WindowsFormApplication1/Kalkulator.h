@@ -253,7 +253,7 @@ namespace WindowsFormApplication1 {
 		{
 			try
 			{
-				label2->Text = (System::Double::Parse(textBox1->Text) + System::Double::Parse(textBox2->Text)).ToString();
+				label2->Text = (Double::Parse(textBox1->Text) + Double::Parse(textBox2->Text)).ToString();
 			}
 			catch (Exception ^a)
 			{
@@ -292,6 +292,10 @@ namespace WindowsFormApplication1 {
 			{
 				label2->Text = "B³¹d";
 			}
+		}
+		if (radioButton1->Checked == false && radioButton2->Checked == false && radioButton3->Checked == false && radioButton4->Checked == false)
+		{
+			label2->Text = "Wybierz dzia³anie";
 		}
 	}
 	private: System::Void button2_Click(System::Object^  sender, System::EventArgs^  e) {
