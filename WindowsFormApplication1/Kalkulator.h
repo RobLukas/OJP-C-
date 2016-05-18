@@ -1,5 +1,6 @@
 #pragma once
 #include "stdafx.h"
+#include "Wyznaczniki.h"
 
 namespace WindowsFormApplication1 {
 
@@ -293,10 +294,7 @@ namespace WindowsFormApplication1 {
 				label2->Text = "B³¹d";
 			}
 		}
-		if (radioButton1->Checked == false && radioButton2->Checked == false && radioButton3->Checked == false && radioButton4->Checked == false)
-		{
-			label2->Text = "Wybierz dzia³anie";
-		}
+		Wyznaczniki.RadioCheck(label2);
 	}
 	private: System::Void button2_Click(System::Object^  sender, System::EventArgs^  e) {
 		this->Close();
