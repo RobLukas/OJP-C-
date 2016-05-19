@@ -29,10 +29,10 @@ void WindowsFormApplication1::Wyznaczniki::Zerowanie(System::Windows::Forms::Tex
 	}
 }
 
-void WindowsFormApplication1::Wyznaczniki::RadioCheck(System::Windows::Forms::Label^ Label) {
+void WindowsFormApplication1::Wyznaczniki::RadioCheck(System::Windows::Forms::Label^ label) {
 
 	if (radioButton1->Checked == false && radioButton2->Checked == false && radioButton3->Checked == false && radioButton4->Checked == false)
 	{
-		Label->Text = "Wybierz dzia³anie";
+		label->Text = "Wybierz dzia³anie";
 	}
 }

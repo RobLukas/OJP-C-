@@ -1,19 +1,13 @@
 ﻿cl : Command line warning D9035: option 'clr:pure' has been deprecated and will be removed in a future release
-  Wyznaczniki.cpp
-c:\projects\ojp-c++\windowsformapplication1\Kalkulator.h(297): error C2653: 'Wyznaczniki': is not a class or namespace name
-c:\projects\ojp-c++\windowsformapplication1\Kalkulator.h(297): error C3861: 'RadioCheck': identifier not found
   MenuProgram.cpp
-c:\projects\ojp-c++\windowsformapplication1\Wyznaczniki.h(556): warning C4101: 'a': unreferenced local variable
-c:\projects\ojp-c++\windowsformapplication1\Wyznaczniki.h(569): warning C4101: 'a': unreferenced local variable
-c:\projects\ojp-c++\windowsformapplication1\Wyznaczniki.h(583): warning C4101: 'a': unreferenced local variable
-c:\projects\ojp-c++\windowsformapplication1\Wyznaczniki.h(600): warning C4101: 'a': unreferenced local variable
-c:\projects\ojp-c++\windowsformapplication1\Kalkulator.h(297): error C2352: 'WindowsFormApplication1::Wyznaczniki::RadioCheck': illegal call of non-static member function
-  c:\projects\ojp-c++\windowsformapplication1\Wyznaczniki.h(35): note: see declaration of 'WindowsFormApplication1::Wyznaczniki::RadioCheck'
+d:\projects\ojp\windowsformapplication1\Kalkulator.h(299): error C2660: 'WindowsFormApplication1::Wyznaczniki::RadioCheck': function does not take 0 arguments
   WindowsFormApplication1.cpp
-c:\projects\ojp-c++\windowsformapplication1\Wyznaczniki.h(556): warning C4101: 'a': unreferenced local variable
-c:\projects\ojp-c++\windowsformapplication1\Wyznaczniki.h(569): warning C4101: 'a': unreferenced local variable
-c:\projects\ojp-c++\windowsformapplication1\Wyznaczniki.h(583): warning C4101: 'a': unreferenced local variable
-c:\projects\ojp-c++\windowsformapplication1\Wyznaczniki.h(600): warning C4101: 'a': unreferenced local variable
-c:\projects\ojp-c++\windowsformapplication1\Kalkulator.h(297): error C2352: 'WindowsFormApplication1::Wyznaczniki::RadioCheck': illegal call of non-static member function
-  c:\projects\ojp-c++\windowsformapplication1\Wyznaczniki.h(35): note: see declaration of 'WindowsFormApplication1::Wyznaczniki::RadioCheck'
+d:\projects\ojp\windowsformapplication1\Kalkulator.h(299): error C2660: 'WindowsFormApplication1::Wyznaczniki::RadioCheck': function does not take 0 arguments
+  Wyznaczniki.cpp
+d:\projects\ojp\windowsformapplication1\Kalkulator.h(298): error C2065: 'Wyznaczniki': undeclared identifier
+d:\projects\ojp\windowsformapplication1\Kalkulator.h(298): error C2146: syntax error: missing ';' before identifier 'Radioch'
+d:\projects\ojp\windowsformapplication1\Kalkulator.h(298): error C2065: 'Radioch': undeclared identifier
+d:\projects\ojp\windowsformapplication1\Kalkulator.h(299): error C2065: 'Radioch': undeclared identifier
+d:\projects\ojp\windowsformapplication1\Kalkulator.h(299): error C2228: left of '.RadioCheck' must have class/struct/union
+  d:\projects\ojp\windowsformapplication1\Kalkulator.h(299): note: type is 'unknown-type'
   Generating Code...

@@ -4,6 +4,7 @@
 
 namespace WindowsFormApplication1 {
 
+	using namespace std;
 	using namespace System;
 	using namespace System::ComponentModel;
 	using namespace System::Collections;
@@ -32,8 +33,9 @@ namespace WindowsFormApplication1 {
 		}
 		//void HideW(System::Windows::Forms::TextBox^);
 		void Zerowanie(System::Windows::Forms::TextBox^, System::Windows::Forms::TextBox^, System::Windows::Forms::TextBox^);
-		virtual void RadioCheck(System::Windows::Forms::Label^);
+		virtual void RadioCheck(System::Windows::Forms::Label^ label);
 		void Zerowanie(System::Windows::Forms::TextBox^);
+
 
 	protected:
 		/// <summary>
@@ -553,7 +555,7 @@ namespace WindowsFormApplication1 {
 			{
 				Wynik->Text = (Double::Parse(W1->Text)).ToString();
 			}
-			catch (Exception ^a)
+			catch (Exception ^)
 			{
 				Wynik->Text = "B³¹d";
 			}
@@ -566,7 +568,7 @@ namespace WindowsFormApplication1 {
 			{
 				Wynik->Text = ((Double::Parse(W1->Text) * (Double::Parse(W2_2->Text))) - (Double::Parse(W2_1->Text) * (Double::Parse(W2_3->Text)))).ToString();
 			}
-			catch (Exception ^a)
+			catch (Exception ^)
 			{
 				Wynik->Text = "B³¹d";
 			}
@@ -580,7 +582,7 @@ namespace WindowsFormApplication1 {
 			{
 				Wynik->Text = ((Double::Parse(W1->Text) * (Double::Parse(W2_2->Text)) * (Double::Parse(W3_3->Text))) + (Double::Parse(W2_3->Text) * (Double::Parse(W3_4->Text)) * (Double::Parse(W3_1->Text))) + (Double::Parse(W3_5->Text) * (Double::Parse(W2_1->Text)) * (Double::Parse(W3_2->Text))) - (Double::Parse(W3_5->Text) * (Double::Parse(W2_2->Text)) * (Double::Parse(W3_1->Text))) - (Double::Parse(W1->Text) * (Double::Parse(W3_4->Text)) * (Double::Parse(W3_2->Text))) - (Double::Parse(W2_3->Text) * (Double::Parse(W2_1->Text)) * (Double::Parse(W3_3->Text)))).ToString();
 			}
-			catch (Exception ^a)
+			catch (Exception ^)
 			{
 				Wynik->Text = "B³¹d";
 			}
@@ -597,7 +599,7 @@ namespace WindowsFormApplication1 {
 			{
 				//Wynik->Text = 
 			}
-			catch (Exception ^a)
+			catch (Exception ^)
 			{
 				Wynik->Text = "B³¹d";
 			}

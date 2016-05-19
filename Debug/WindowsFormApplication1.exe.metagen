@@ -27,7 +27,7 @@ Class WindowsFormApplication1.Wyznaczniki: AutoLayout, AnsiClass, Class, Public,
   Methods:
     Zerowanie(TextBox): PrivateScope, Public, HideBySig
     Zerowanie(TextBox, TextBox, TextBox): PrivateScope, Public, HideBySig
-    RadioCheck(Label): PrivateScope, Public, HideBySig
+    RadioCheck(Label): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
 Class WindowsFormApplication1.MenuProgram: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
