@@ -24,10 +24,16 @@ Class WindowsFormApplication1.Wyznaczniki: AutoLayout, AnsiClass, Class, Public,
   :System.Windows.Forms.Form
     Void .ctor(System.Windows.Forms.Form): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Windows.Forms.TextBox[] ar : Public
   Methods:
-    Zerowanie(TextBox): PrivateScope, Public, HideBySig
-    Zerowanie(TextBox, TextBox, TextBox): PrivateScope, Public, HideBySig
+    ResetW(): PrivateScope, Public, HideBySig
     RadioCheck(Label): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    HideW(Control): PrivateScope, Public, HideBySig
+    ShortW(Control): PrivateScope, Public, HideBySig
+    Wyz3(Label): PrivateScope, Public, HideBySig
+    Wyz2(Label): PrivateScope, Public, HideBySig
+    Wyz4(Label): PrivateScope, Public, HideBySig
 Class WindowsFormApplication1.MenuProgram: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName

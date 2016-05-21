@@ -36,6 +36,9 @@
     <ClCompile Include="Wyznaczniki.cpp">
       <Filter>Header Files</Filter>
     </ClCompile>
+    <ClCompile Include="Macierze.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -51,6 +54,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Wyznaczniki.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Macierze.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -89,6 +89,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AssemblyInfo.cpp" />
+    <ClCompile Include="Macierze.cpp" />
     <ClCompile Include="Wyznaczniki.cpp" />
     <ClCompile Include="MenuProgram.cpp" />
     <ClCompile Include="stdafx.cpp">
@@ -99,6 +100,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Kalkulator.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Macierze.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="Wyznaczniki.h">

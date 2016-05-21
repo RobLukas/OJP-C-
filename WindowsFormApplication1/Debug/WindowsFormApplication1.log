@@ -1,13 +1,6 @@
 ﻿cl : Command line warning D9035: option 'clr:pure' has been deprecated and will be removed in a future release
   MenuProgram.cpp
-d:\projects\ojp\windowsformapplication1\Kalkulator.h(299): error C2660: 'WindowsFormApplication1::Wyznaczniki::RadioCheck': function does not take 0 arguments
   WindowsFormApplication1.cpp
-d:\projects\ojp\windowsformapplication1\Kalkulator.h(299): error C2660: 'WindowsFormApplication1::Wyznaczniki::RadioCheck': function does not take 0 arguments
   Wyznaczniki.cpp
-d:\projects\ojp\windowsformapplication1\Kalkulator.h(298): error C2065: 'Wyznaczniki': undeclared identifier
-d:\projects\ojp\windowsformapplication1\Kalkulator.h(298): error C2146: syntax error: missing ';' before identifier 'Radioch'
-d:\projects\ojp\windowsformapplication1\Kalkulator.h(298): error C2065: 'Radioch': undeclared identifier
-d:\projects\ojp\windowsformapplication1\Kalkulator.h(299): error C2065: 'Radioch': undeclared identifier
-d:\projects\ojp\windowsformapplication1\Kalkulator.h(299): error C2228: left of '.RadioCheck' must have class/struct/union
-  d:\projects\ojp\windowsformapplication1\Kalkulator.h(299): note: type is 'unknown-type'
   Generating Code...
+d:\projects\ojp\windowsformapplication1\wyznaczniki.cpp(41): error C4716: 'WindowsFormApplication1::Wyznaczniki::ShortW': must return a value

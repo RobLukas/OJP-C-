@@ -1,31 +1,16 @@
 #include "stdafx.h"
 #include "Wyznaczniki.h"
 
-//oid HideW(System::Windows::Forms::TextBox^ W) {
+using namespace std;
 
-//}
-
-void WindowsFormApplication1::Wyznaczniki::Zerowanie(System::Windows::Forms::TextBox^ W, System::Windows::Forms::TextBox^ W1, System::Windows::Forms::TextBox^ W2)
+void WindowsFormApplication1::Wyznaczniki::ResetW()
 {
-	if (W->Text == "")
+	for (int i = 0; i < WYZNACZNIK; i++)
 	{
-		W->Text = "0";
-	}
-	if (W1->Text == "")
-	{
-		W1->Text = "0";
-	}
-	if (W2->Text == "")
-	{
-		W2->Text = "0";
-	}
-}
-
-void WindowsFormApplication1::Wyznaczniki::Zerowanie(System::Windows::Forms::TextBox^ W)
-{
-	if (W->Text == "")
-	{
-		W->Text = "0";
+		if (ar[i]->Text == "")
+		{
+			ar[i]->Text = "0";
+		}
 	}
 }
 
@@ -35,4 +20,45 @@ void WindowsFormApplication1::Wyznaczniki::RadioCheck(System::Windows::Forms::La
 	{
 		label->Text = "Wybierz dzia³anie";
 	}
+}
+
+
+void WindowsFormApplication1::Wyznaczniki::HideW(System::Windows::Forms::Control^ control) {
+	control->Visible = false;
+	if (control->HasChildren)
+	{
+		IEnumerator^ MyEnum = control->Controls->GetEnumerator();
+		while (MyEnum->MoveNext())
+		{
+			Control^ childControl = safe_cast<Control^>(MyEnum->Current);
+			HideW(childControl);
+		}
+	}
+}
+
+double WindowsFormApplication1::Wyznaczniki::ShortW(System::Windows::Forms::Control^ W) {
+		Double::Parse(W->Text);
+}
+
+void WindowsFormApplication1::Wyznaczniki::Wyz2(System::Windows::Forms::Label^ Label) {
+	Label->Text = (Double::Parse(W1->Text) * Double::Parse(W2_2->Text) - (Double::Parse(W2_1->Text) * Double::Parse(W2_3->Text))).ToString();
+}
+
+void WindowsFormApplication1::Wyznaczniki::Wyz3(System::Windows::Forms::Label^ Label) {
+	Label->Text = ((Double::Parse(W1->Text) * (Double::Parse(W2_2->Text)) * (Double::Parse(W3_3->Text))) + (Double::Parse(W2_3->Text) * (Double::Parse(W3_4->Text)) * (Double::Parse(W3_1->Text))) + (Double::Parse(W3_5->Text) * (Double::Parse(W2_1->Text)) * (Double::Parse(W3_2->Text))) - (Double::Parse(W3_5->Text) * (Double::Parse(W2_2->Text)) * (Double::Parse(W3_1->Text))) - (Double::Parse(W1->Text) * (Double::Parse(W3_4->Text)) * (Double::Parse(W3_2->Text))) - (Double::Parse(W2_3->Text) * (Double::Parse(W2_1->Text)) * (Double::Parse(W3_3->Text)))).ToString();
+}
+
+void WindowsFormApplication1::Wyznaczniki::Wyz4(System::Windows::Forms::Label^ Label) {
+	Label->Text = ((Double::Parse(W1->Text)*(Double::Parse(W2_2->Text)*(Double::Parse(W3_3->Text)*(Double::Parse(W4_4->Text))))) + (Double::Parse(W1->Text)*(Double::Parse(W3_4->Text)*(Double::Parse(W4_5->Text)*(Double::Parse(W4_2->Text))))) + 
+		(Double::Parse(W1->Text)*(Double::Parse(W4_6->Text)*(Double::Parse(W3_2->Text)*(Double::Parse(W4_3->Text))))) +	(Double::Parse(W2_3->Text)*(Double::Parse(W2_1->Text)*(Double::Parse(W4_5->Text)*(Double::Parse(W4_3->Text))))) +
+		(Double::Parse(W2_3->Text)*(Double::Parse(W3_4->Text)*(Double::Parse(W3_1->Text)*(Double::Parse(W4_4->Text))))) + (Double::Parse(W2_3->Text)*(Double::Parse(W4_6->Text)*(Double::Parse(W3_3->Text)*(Double::Parse(W4_1->Text))))) +
+		(Double::Parse(W3_5->Text)*(Double::Parse(W2_1->Text)*(Double::Parse(W3_2->Text)*(Double::Parse(W4_4->Text))))) + (Double::Parse(W3_5->Text)*(Double::Parse(W2_2->Text)*(Double::Parse(W4_5->Text)*(Double::Parse(W4_1->Text))))) +
+		(Double::Parse(W3_5->Text)*(Double::Parse(W4_6->Text)*(Double::Parse(W3_1->Text)*(Double::Parse(W4_2->Text))))) + (Double::Parse(W4_7->Text)*(Double::Parse(W2_1->Text)*(Double::Parse(W3_3->Text)*(Double::Parse(W4_2->Text))))) + 
+		(Double::Parse(W4_7->Text)*(Double::Parse(W2_2->Text)*(Double::Parse(W3_1->Text)*(Double::Parse(W4_3->Text))))) + (Double::Parse(W4_7->Text)*(Double::Parse(W3_4->Text)*(Double::Parse(W3_2->Text)*(Double::Parse(W4_1->Text))))) - 
+		(Double::Parse(W1->Text)*(Double::Parse(W2_2->Text)*(Double::Parse(W4_5->Text)*(Double::Parse(W4_3->Text))))) - (Double::Parse(W1->Text)*(Double::Parse(W3_4->Text)*(Double::Parse(W3_2->Text)*(Double::Parse(W4_4->Text))))) - 
+		(Double::Parse(W1->Text)*(Double::Parse(W4_6->Text)*(Double::Parse(W3_3->Text)*(Double::Parse(W4_2->Text))))) -	(Double::Parse(W2_3->Text)*(Double::Parse(W2_1->Text)*(Double::Parse(W3_3->Text)*(Double::Parse(W4_4->Text))))) - 
+		(Double::Parse(W2_3->Text)*(Double::Parse(W3_4->Text)*(Double::Parse(W4_5->Text)*(Double::Parse(W4_1->Text))))) - (Double::Parse(W2_3->Text)*(Double::Parse(W4_6->Text)*(Double::Parse(W3_1->Text)*(Double::Parse(W4_3->Text))))) -
+		(Double::Parse(W3_5->Text)*(Double::Parse(W2_1->Text)*(Double::Parse(W4_5->Text)*(Double::Parse(W4_2->Text))))) - (Double::Parse(W3_5->Text)*(Double::Parse(W2_2->Text)*(Double::Parse(W3_1->Text)*(Double::Parse(W4_4->Text))))) -
+		(Double::Parse(W3_5->Text)*(Double::Parse(W4_6->Text)*(Double::Parse(W3_2->Text)*(Double::Parse(W4_1->Text))))) - (Double::Parse(W4_7->Text)*(Double::Parse(W2_1->Text)*(Double::Parse(W3_2->Text)*(Double::Parse(W4_3->Text))))) -
+		(Double::Parse(W4_7->Text)*(Double::Parse(W2_2->Text)*(Double::Parse(W3_3->Text)*(Double::Parse(W4_1->Text))))) - (Double::Parse(W4_7->Text)*(Double::Parse(W3_4->Text)*(Double::Parse(W3_1->Text)*(Double::Parse(W4_2->Text)))))).ToString();
 }
