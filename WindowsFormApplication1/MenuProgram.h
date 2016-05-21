@@ -1,9 +1,11 @@
 #pragma once
 #include "Kalkulator.h"
 #include "Wyznaczniki.h"
+#include "Macierze.h"
 
 namespace WindowsFormApplication1 {
 
+	using namespace std;
 	using namespace System;
 	using namespace System::ComponentModel;
 	using namespace System::Collections;
@@ -113,6 +115,9 @@ namespace WindowsFormApplication1 {
 		wyzn->Show();
 	}
 	private: System::Void button3_Click(System::Object^  sender, System::EventArgs^  e) {
+		this->Hide();
+		Macierze^ mac = gcnew Macierze(this);
+		mac->Show();
 	}
 	};
 }

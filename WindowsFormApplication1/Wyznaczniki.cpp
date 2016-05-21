@@ -36,7 +36,7 @@ void WindowsFormApplication1::Wyznaczniki::HideW(System::Windows::Forms::Control
 	}
 }
 
-double WindowsFormApplication1::Wyznaczniki::ShortW(System::Windows::Forms::Control^ W) {
+void WindowsFormApplication1::Wyznaczniki::ShortW(System::Windows::Forms::Control^ W) {
 		Double::Parse(W->Text);
 }
 

@@ -36,7 +36,7 @@ namespace WindowsFormApplication1 {
 		void ResetW();
 		virtual void RadioCheck(Label^);
 		void HideW(Control^);
-		double ShortW(Control^);
+		void ShortW(Control^);
 		void Wyz3(Label^);
 		void Wyz2(Label^);
 		void Wyz4(Label^);

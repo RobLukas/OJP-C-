@@ -1,6 +1,6 @@
 ﻿cl : Command line warning D9035: option 'clr:pure' has been deprecated and will be removed in a future release
+  Macierze.cpp
   MenuProgram.cpp
   WindowsFormApplication1.cpp
-  Wyznaczniki.cpp
   Generating Code...
-d:\projects\ojp\windowsformapplication1\wyznaczniki.cpp(41): error C4716: 'WindowsFormApplication1::Wyznaczniki::ShortW': must return a value
+  WindowsFormApplication1.vcxproj -> D:\Projects\OJP\Debug\WindowsFormApplication1.exe
