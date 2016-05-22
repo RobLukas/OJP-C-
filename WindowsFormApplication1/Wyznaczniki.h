@@ -454,13 +454,6 @@ namespace WindowsFormApplication1 {
 		otherform->Show();
 	}
 	private: System::Void radioButton1_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
-		/*
-		for each (Control^ con in this->Controls)
-		{
-			TextBox^ W = gcnew TextBox();
-			W->Visible = false;
-		}
-		*/
 
 		for (int i = 1; i < WYZNACZNIK; i++)
 		{

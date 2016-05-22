@@ -295,8 +295,6 @@ namespace WindowsFormApplication1 {
 				label2->Text = "B³¹d";
 			}
 		}
-	//	Wyznaczniki Radioch;
-	//	Radioch.RadioCheck();
 		
 		if (radioButton1->Checked == false && radioButton2->Checked == false && radioButton3->Checked == false && radioButton4->Checked == false)
 		{

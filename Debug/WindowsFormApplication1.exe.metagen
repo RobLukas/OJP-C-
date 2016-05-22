@@ -22,9 +22,21 @@ Class WindowsFormApplication1.Macierze: AutoLayout, AnsiClass, Class, Public, Be
     Void .ctor(System.Windows.Forms.Form): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
   Methods:
-    unlockRadio(RadioButton): PrivateScope, Public, HideBySig
+    unlockRadioA(RadioButton): PrivateScope, Public, HideBySig
+    unlockRadioB(RadioButton): PrivateScope, Public, HideBySig
+    MatrixA(Int32, Int32): PrivateScope, Public, HideBySig
     MatrixA(): PrivateScope, Public, HideBySig
+    MatrixB(Int32, Int32): PrivateScope, Public, HideBySig
     MatrixB(): PrivateScope, Public, HideBySig
+    MatrixC(Int32, Int32): PrivateScope, Public, HideBySig
+    MatrixC(): PrivateScope, Public, HideBySig
+    MatrixDodaw(): PrivateScope, Public, HideBySig
+    Reset(TextBox[][]): PrivateScope, Public, HideBySig
+    MatrixOdej(): PrivateScope, Public, HideBySig
+    ResetOkna(): PrivateScope, Public, HideBySig
+    MatrixMnoz(): PrivateScope, Public, HideBySig
+    ShortMatrixMulti(RadioButton[], RadioButton[]): PrivateScope, Public, HideBySig
+    MatrixTrans(): PrivateScope, Public, HideBySig
 Class WindowsFormApplication1.Kalkulator: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(System.Windows.Forms.Form): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName

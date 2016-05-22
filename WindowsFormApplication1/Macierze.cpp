@@ -4,7 +4,25 @@
 using namespace std;
 using namespace System::Windows::Forms;
 
-void WindowsFormApplication1::Macierze::unlockRadio(RadioButton^ RadioBut) {
+void WindowsFormApplication1::Macierze::unlockRadioB(RadioButton^ RadioBut) {
+
+	RadioB[0] = radioButtonK2_B;
+	RadioB[1] = radioButtonK3_B;
+	RadioB[2] = radioButtonK4_B;
+	RadioB[3] = radioButtonW2_B;
+	RadioB[4] = radioButtonW3_B;
+	RadioB[5] = radioButtonW4_B;
+
+	if (RadioBut->Checked)
+	{
+		for (int i = 0; i < 6; i++)
+		{
+			RadioB[i]->Enabled = true;
+		}
+	}
+}
+
+void WindowsFormApplication1::Macierze::unlockRadioA(RadioButton^ RadioBut) {
 
 	RadioA[0] = radioButtonK2_A;
 	RadioA[1] = radioButtonK3_A;
@@ -68,4 +86,355 @@ void WindowsFormApplication1::Macierze::MatrixB() {
 	B[3][1] = this->B42;
 	B[3][2] = this->B43;
 	B[3][3] = this->B44;
+}
+
+void WindowsFormApplication1::Macierze::MatrixC() {
+	for (int i = 0; i < 4; i++)
+	{
+		C[i] = gcnew array<TextBox^, 1>(4);
+	}
+
+	C[0][0] = this->C11;
+	C[0][1] = this->C12;
+	C[0][2] = this->C13;
+	C[0][3] = this->C14;
+	C[1][0] = this->C21;
+	C[1][1] = this->C22;
+	C[1][2] = this->C23;
+	C[1][3] = this->C24;
+	C[2][0] = this->C31;
+	C[2][1] = this->C32;
+	C[2][2] = this->C33;
+	C[2][3] = this->C34;
+	C[3][0] = this->C41;
+	C[3][1] = this->C42;
+	C[3][2] = this->C43;
+	C[3][3] = this->C44;
+}
+
+void WindowsFormApplication1::Macierze::MatrixA(int x, int y) {
+	
+	for (int j = 0; j < 4; j++)
+	{
+		for (int i = 0; i < 4; i++)
+		{
+			A[i][j]->Enabled = false;
+		}
+	}
+	for (int j = 0; j < x; j++)
+	{
+		for (int i = 0; i < y; i++)
+		{
+			A[i][j]->Enabled = true;
+		}
+	}
+}
+
+void WindowsFormApplication1::Macierze::MatrixB(int x, int y) {
+
+	for (int j = 0; j < 4; j++)
+	{
+		for (int i = 0; i < 4; i++)
+		{
+			B[i][j]->Enabled = false;
+		}
+	}
+	for (int j = 0; j < x; j++)
+	{
+		for (int i = 0; i < y; i++)
+		{
+			B[i][j]->Enabled = true;
+		}
+	}
+}
+
+void WindowsFormApplication1::Macierze::MatrixC(int x, int y) {
+
+	for (int j = 0; j < 4; j++)
+	{
+		for (int i = 0; i < 4; i++)
+		{
+			C[i][j]->Enabled = false;
+		}
+	}
+	for (int j = 0; j < x; j++)
+	{
+		for (int i = 0; i < y; i++)
+		{
+			C[i][j]->Enabled = true;
+		}
+	}
+}
+
+void WindowsFormApplication1::Macierze::MatrixDodaw() {
+	for (int i = 0; i < 4; i++)
+	{
+		for (int j = 0; j < 4; j++)
+		{
+			if (C[i][j]->Enabled)
+			{
+				C[i][j]->Text = (Double::Parse(A[i][j]->Text) + Double::Parse(B[i][j]->Text)).ToString();
+			}
+		}
+	}
+}
+
+void WindowsFormApplication1::Macierze::Reset(array<array<TextBox^>^> ^ A) {
+	for (int i = 0; i < 4; i++)
+	{
+		for (int j = 0; j < 4; j++)
+		{
+			if (A[i][j]->Text == "" && A[i][j]->Enabled)
+			{
+				A[i][j]->Text = "0";
+			}
+		}
+	}
+}
+
+void WindowsFormApplication1::Macierze::MatrixOdej() {
+	for (int i = 0; i < 4; i++)
+	{
+		for (int j = 0; j < 4; j++)
+		{
+			if (C[i][j]->Enabled)
+			{
+				C[i][j]->Text = (Double::Parse(A[i][j]->Text) - (Double::Parse(B[i][j]->Text))).ToString();
+			}
+		}
+	}
+}
+
+void WindowsFormApplication1::Macierze::ResetOkna() {
+	for (int i = 0; i < 4; i++)
+	{
+		for (int j = 0; j < 4; j++)
+		{
+			if (A[i][j]->Text != "" || B[i][j]->Text != "" || C[i][j]->Text != "")
+			{
+				A[i][j]->Text = "";
+				B[i][j]->Text = "";
+				C[i][j]->Text = "";
+			}
+		}
+	}
+}
+
+void WindowsFormApplication1::Macierze::MatrixMnoz() {
+	int s;
+	if (radioButtonW2_A->Checked && radioButtonK2_B->Checked)
+	{
+		for (int i = 0; i < 2; i++)//wiersz
+		{
+			for (int j = 0; j < 2; j++)//kolumna
+			{
+				s = 0;
+				for (int k = 0; k < 2; k++)
+				{
+					if (C[i][j]->Enabled)
+					{
+						s = s + ((Double::Parse(A[i][k]->Text))*(Double::Parse(B[k][j]->Text)));
+					}
+					C[i][j]->Text = s.ToString();
+				}
+			}
+		}
+	}
+	else if (radioButtonW2_A->Checked && radioButtonK3_B->Checked)
+	{
+		for (int i = 0; i < 2; i++)//wiersz
+		{
+			for (int j = 0; j < 3; j++)//kolumna
+			{
+				s = 0;
+				for (int k = 0; k < 3; k++)
+				{
+					if (C[i][j]->Enabled)
+					{
+						s = s + ((Double::Parse(A[i][k]->Text))*(Double::Parse(B[k][j]->Text)));
+					}
+					C[i][j]->Text = s.ToString();
+				}
+			}
+		}
+	}
+	else if (radioButtonW2_A->Checked && radioButtonK4_B->Checked)
+	{
+		for (int i = 0; i < 2; i++)//wiersz
+		{
+			for (int j = 0; j < 4; j++)//kolumna
+			{
+				s = 0;
+				for (int k = 0; k < 4; k++)
+				{
+					if (C[i][j]->Enabled)
+					{
+						s = s + ((Double::Parse(A[i][k]->Text))*(Double::Parse(B[k][j]->Text)));
+					}
+					C[i][j]->Text = s.ToString();
+				}
+			}
+		}
+	}
+	else if (radioButtonW3_A->Checked && radioButtonK2_B->Checked)
+	{
+		for (int i = 0; i < 3; i++)//wiersz
+		{
+			for (int j = 0; j < 2; j++)//kolumna
+			{
+				s = 0;
+				for (int k = 0; k < 2; k++)
+				{
+					if (C[i][j]->Enabled)
+					{
+						s = s + ((Double::Parse(A[i][k]->Text))*(Double::Parse(B[k][j]->Text)));
+					}
+					C[i][j]->Text = s.ToString();
+				}
+			}
+		}
+	}
+	else if (radioButtonW3_A->Checked && radioButtonK3_B->Checked)
+	{
+		for (int i = 0; i < 3; i++)//wiersz
+		{
+			for (int j = 0; j < 3; j++)//kolumna
+			{
+				s = 0;
+				for (int k = 0; k < 3; k++)
+				{
+					if (C[i][j]->Enabled)
+					{
+						s = s + ((Double::Parse(A[i][k]->Text))*(Double::Parse(B[k][j]->Text)));
+					}
+					C[i][j]->Text = s.ToString();
+				}
+			}
+		}
+	}
+	else if (radioButtonW3_A->Checked && radioButtonK4_B->Checked)
+	{
+		for (int i = 0; i < 3; i++)//wiersz
+		{
+			for (int j = 0; j < 4; j++)//kolumna
+			{
+				s = 0;
+				for (int k = 0; k < Double::Parse(RadioB[2]->Text); k++)
+				{
+					if (C[i][j]->Enabled)
+					{
+						s = s + ((Double::Parse(A[i][k]->Text))*(Double::Parse(B[k][j]->Text)));
+					}
+					C[i][j]->Text = s.ToString();
+				}
+			}
+		}
+	}
+	else if (radioButtonW4_A->Checked && radioButtonK2_B->Checked)
+	{
+		for (int i = 0; i < 4; i++)//wiersz
+		{
+			for (int j = 0; j < 2; j++)//kolumna
+			{
+				s = 0;
+				for (int k = 0; k < 2; k++)
+				{
+					if (C[i][j]->Enabled)
+					{
+						s = s + ((Double::Parse(A[i][k]->Text))*(Double::Parse(B[k][j]->Text)));
+					}
+					C[i][j]->Text = s.ToString();
+				}
+			}
+		}
+	}
+	else if (radioButtonW4_A->Checked && radioButtonK3_B->Checked)
+	{
+		for (int i = 0; i < 4; i++)//wiersz
+		{
+			for (int j = 0; j < 3; j++)//kolumna
+			{
+				s = 0;
+				for (int k = 0; k < 3; k++)
+				{
+					if (C[i][j]->Enabled)
+					{
+						s = s + ((Double::Parse(A[i][k]->Text))*(Double::Parse(B[k][j]->Text)));
+					}
+					C[i][j]->Text = s.ToString();
+				}
+			}
+		}
+	}
+	else if (radioButtonW4_A->Checked && radioButtonK4_B->Checked)
+	{
+		for (int i = 0; i < 4; i++)//wiersz
+		{
+			for (int j = 0; j < 4; j++)//kolumna
+			{
+				s = 0;
+				for (int k = 0; k < 4; k++)
+				{
+					if (C[i][j]->Enabled)
+					{
+						s = s + ((Double::Parse(A[i][k]->Text))*(Double::Parse(B[k][j]->Text)));
+					}
+					C[i][j]->Text = s.ToString();
+				}
+			}
+		}
+	}
+
+}
+
+
+void WindowsFormApplication1::Macierze::ShortMatrixMulti(array<RadioButton^, 1> ^ RadioAA, array<RadioButton^, 1> ^ RadioBB) {
+	int s;
+	for (int i = 0; i <= Double::Parse(RadioAA[3]->Text); i++)//wiersz
+	{
+		for (int j = 0; j <= Double::Parse(RadioBB[0]->Text); j++)//kolumna
+		{
+			s = 0;
+			for (int k = 0; k <= Double::Parse(RadioBB[0]->Text); k++)
+			{
+				if (C[i][j]->Enabled)
+				{
+					s = s + ((Double::Parse(A[i][k]->Text))*(Double::Parse(B[k][j]->Text)));
+				}
+				C[i][j]->Text = s.ToString();
+			}
+		}
+	}
+}
+
+void WindowsFormApplication1::Macierze::MatrixTrans() {
+	if (radioButtonW3_A->Checked && radioButtonK2_A->Checked)
+	{
+		for (int i = 0; i < 2; i++)
+		{
+
+		}
+	}
+	if (radioButtonW4_A->Checked && radioButtonK2_A->Checked)
+	{
+		for (int i = 0; i < 2; i++)
+		{
+
+		}
+	}
+	if (radioButtonW3_A->Checked && radioButtonK2_A->Checked)
+	{
+		for (int i = 0; i < 2; i++)
+		{
+
+		}
+	}
+	if (radioButtonW4_A->Checked && radioButtonK2_A->Checked)
+	{
+		for (int i = 0; i < 2; i++)
+		{
+
+		}
+	}
+
 }
