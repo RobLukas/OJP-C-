@@ -100,7 +100,7 @@ namespace WindowsFormApplication1 {
 
 
 
-	private: System::Windows::Forms::RadioButton^  radioButtonPotegowanie;
+
 
 	private: System::Windows::Forms::RadioButton^  radioButtonMnozenie;
 
@@ -236,10 +236,14 @@ private: System::Windows::Forms::TextBox^  C31;
 private: System::Windows::Forms::TextBox^  C24;
 private: System::Windows::Forms::Button^  button1;
 private: System::Windows::Forms::Button^  button3;
+private: System::Windows::Forms::ToolTip^  toolTip1;
+
+
+private: System::ComponentModel::IContainer^  components;
 
 
 		 /// </summary>
-		System::ComponentModel::Container ^components;
+
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
@@ -248,6 +252,8 @@ private: System::Windows::Forms::Button^  button3;
 		/// </summary>
 		void InitializeComponent(void)
 		{
+			this->components = (gcnew System::ComponentModel::Container());
+			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(Macierze::typeid));
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->groupBoxMA = (gcnew System::Windows::Forms::GroupBox());
 			this->radioButtonK4_A = (gcnew System::Windows::Forms::RadioButton());
@@ -256,7 +262,6 @@ private: System::Windows::Forms::Button^  button3;
 			this->radioButtonK2_A = (gcnew System::Windows::Forms::RadioButton());
 			this->groupBoxDzia³ania = (gcnew System::Windows::Forms::GroupBox());
 			this->radioButtonTransponowanie = (gcnew System::Windows::Forms::RadioButton());
-			this->radioButtonPotegowanie = (gcnew System::Windows::Forms::RadioButton());
 			this->radioButtonMnozenie = (gcnew System::Windows::Forms::RadioButton());
 			this->radioButtonOdejmowanie = (gcnew System::Windows::Forms::RadioButton());
 			this->radioButtonDodawanie = (gcnew System::Windows::Forms::RadioButton());
@@ -332,6 +337,7 @@ private: System::Windows::Forms::Button^  button3;
 			this->C24 = (gcnew System::Windows::Forms::TextBox());
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->button3 = (gcnew System::Windows::Forms::Button());
+			this->toolTip1 = (gcnew System::Windows::Forms::ToolTip(this->components));
 			this->groupBoxMA->SuspendLayout();
 			this->groupBoxDzia³ania->SuspendLayout();
 			this->groupBoxB->SuspendLayout();
@@ -420,40 +426,28 @@ private: System::Windows::Forms::Button^  button3;
 			// groupBoxDzia³ania
 			// 
 			this->groupBoxDzia³ania->Controls->Add(this->radioButtonTransponowanie);
-			this->groupBoxDzia³ania->Controls->Add(this->radioButtonPotegowanie);
 			this->groupBoxDzia³ania->Controls->Add(this->radioButtonMnozenie);
 			this->groupBoxDzia³ania->Controls->Add(this->radioButtonOdejmowanie);
 			this->groupBoxDzia³ania->Controls->Add(this->radioButtonDodawanie);
 			this->groupBoxDzia³ania->Location = System::Drawing::Point(14, 275);
 			this->groupBoxDzia³ania->Name = L"groupBoxDzia³ania";
-			this->groupBoxDzia³ania->Size = System::Drawing::Size(197, 108);
+			this->groupBoxDzia³ania->Size = System::Drawing::Size(265, 89);
 			this->groupBoxDzia³ania->TabIndex = 9;
 			this->groupBoxDzia³ania->TabStop = false;
 			this->groupBoxDzia³ania->Text = L"Dzia³ania:";
+			this->toolTip1->SetToolTip(this->groupBoxDzia³ania, L"ZatwierŸ macierz aby przejœæ do ustawiania parametrów drugiej macierzy");
 			// 
 			// radioButtonTransponowanie
 			// 
 			this->radioButtonTransponowanie->AutoSize = true;
-			this->radioButtonTransponowanie->Location = System::Drawing::Point(6, 85);
+			this->radioButtonTransponowanie->Location = System::Drawing::Point(101, 53);
 			this->radioButtonTransponowanie->Name = L"radioButtonTransponowanie";
-			this->radioButtonTransponowanie->Size = System::Drawing::Size(104, 17);
+			this->radioButtonTransponowanie->Size = System::Drawing::Size(163, 17);
 			this->radioButtonTransponowanie->TabIndex = 4;
 			this->radioButtonTransponowanie->TabStop = true;
-			this->radioButtonTransponowanie->Text = L"Transponowanie";
+			this->radioButtonTransponowanie->Text = L"Transponowanie prostok¹tne";
 			this->radioButtonTransponowanie->UseVisualStyleBackColor = true;
 			this->radioButtonTransponowanie->CheckedChanged += gcnew System::EventHandler(this, &Macierze::radioButtonTransponowanie_CheckedChanged);
-			// 
-			// radioButtonPotegowanie
-			// 
-			this->radioButtonPotegowanie->AutoSize = true;
-			this->radioButtonPotegowanie->Location = System::Drawing::Point(101, 53);
-			this->radioButtonPotegowanie->Name = L"radioButtonPotegowanie";
-			this->radioButtonPotegowanie->Size = System::Drawing::Size(87, 17);
-			this->radioButtonPotegowanie->TabIndex = 3;
-			this->radioButtonPotegowanie->TabStop = true;
-			this->radioButtonPotegowanie->Text = L"Potegowanie";
-			this->radioButtonPotegowanie->UseVisualStyleBackColor = true;
-			this->radioButtonPotegowanie->CheckedChanged += gcnew System::EventHandler(this, &Macierze::radioButtonPotegowanie_CheckedChanged);
 			// 
 			// radioButtonMnozenie
 			// 
@@ -1007,31 +1001,31 @@ private: System::Windows::Forms::Button^  button3;
 			this->buttonA->Enabled = false;
 			this->buttonA->Location = System::Drawing::Point(105, 224);
 			this->buttonA->Name = L"buttonA";
-			this->buttonA->Size = System::Drawing::Size(48, 30);
+			this->buttonA->Size = System::Drawing::Size(85, 45);
 			this->buttonA->TabIndex = 15;
-			this->buttonA->Text = L"Zbuduj";
+			this->buttonA->Text = L"ZatwierdŸ okno";
 			this->buttonA->UseVisualStyleBackColor = true;
 			this->buttonA->Click += gcnew System::EventHandler(this, &Macierze::button1_Click);
 			// 
 			// buttonB
 			// 
 			this->buttonB->Enabled = false;
-			this->buttonB->Location = System::Drawing::Point(580, 224);
+			this->buttonB->Location = System::Drawing::Point(546, 224);
 			this->buttonB->Name = L"buttonB";
-			this->buttonB->Size = System::Drawing::Size(48, 30);
+			this->buttonB->Size = System::Drawing::Size(82, 45);
 			this->buttonB->TabIndex = 16;
-			this->buttonB->Text = L"Zbuduj";
+			this->buttonB->Text = L"ZatwierdŸ okno";
 			this->buttonB->UseVisualStyleBackColor = true;
 			this->buttonB->Click += gcnew System::EventHandler(this, &Macierze::button3_Click);
 			// 
 			// LabelAW
 			// 
 			this->LabelAW->AutoSize = true;
-			this->LabelAW->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->LabelAW->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 11.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(238)));
-			this->LabelAW->Location = System::Drawing::Point(576, 403);
+			this->LabelAW->Location = System::Drawing::Point(17, 399);
 			this->LabelAW->Name = L"LabelAW";
-			this->LabelAW->Size = System::Drawing::Size(0, 24);
+			this->LabelAW->Size = System::Drawing::Size(0, 18);
 			this->LabelAW->TabIndex = 17;
 			// 
 			// labelZnak
@@ -1063,7 +1057,7 @@ private: System::Windows::Forms::Button^  button3;
 			this->groupBox2->Controls->Add(this->C23);
 			this->groupBox2->Controls->Add(this->C31);
 			this->groupBox2->Controls->Add(this->C24);
-			this->groupBox2->Location = System::Drawing::Point(317, 263);
+			this->groupBox2->Location = System::Drawing::Point(297, 263);
 			this->groupBox2->Name = L"groupBox2";
 			this->groupBox2->Size = System::Drawing::Size(243, 173);
 			this->groupBox2->TabIndex = 32;
@@ -1232,7 +1226,7 @@ private: System::Windows::Forms::Button^  button3;
 			// 
 			// button1
 			// 
-			this->button1->Location = System::Drawing::Point(580, 328);
+			this->button1->Location = System::Drawing::Point(546, 328);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(110, 55);
 			this->button1->TabIndex = 33;
@@ -1242,13 +1236,17 @@ private: System::Windows::Forms::Button^  button3;
 			// 
 			// button3
 			// 
-			this->button3->Location = System::Drawing::Point(159, 224);
+			this->button3->Location = System::Drawing::Point(196, 223);
 			this->button3->Name = L"button3";
 			this->button3->Size = System::Drawing::Size(75, 30);
 			this->button3->TabIndex = 34;
 			this->button3->Text = L"Reset okna";
 			this->button3->UseVisualStyleBackColor = true;
 			this->button3->Click += gcnew System::EventHandler(this, &Macierze::button3_Click_1);
+			// 
+			// toolTip1
+			// 
+			this->toolTip1->ToolTipIcon = System::Windows::Forms::ToolTipIcon::Warning;
 			// 
 			// Macierze
 			// 
@@ -1271,6 +1269,7 @@ private: System::Windows::Forms::Button^  button3;
 			this->Controls->Add(this->groupBoxDzia³ania);
 			this->Controls->Add(this->groupBoxMA);
 			this->Controls->Add(this->button2);
+			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
 			this->Name = L"Macierze";
 			this->Text = L"Macierze";
 			this->groupBoxMA->ResumeLayout(false);
@@ -1301,18 +1300,23 @@ private: System::Windows::Forms::Button^  button3;
 
 	private: System::Void radioButtonDodawanie_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
 		groupBoxA->Enabled = true;
-		groupBoxB->Enabled = true;
+		groupBoxB->Enabled = false;
 		unlockRadioA(radioButtonDodawanie);
 		buttonA->Enabled = true;
 		labelZnak->Text = "+";
+		LabelAW->Text = "";
+		buttonB->Enabled = false;
+
 	}
 	private: System::Void radioButtonOdejmowanie_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
 		groupBoxA->Enabled = true;
-		groupBoxB->Enabled = true;
+		groupBoxB->Enabled = false;
 		groupBoxMA->Enabled = true;
 		groupBoxMA2->Enabled = true;
 		unlockRadioA(radioButtonOdejmowanie);
 		labelZnak->Text = "-";
+		LabelAW->Text = "";
+		buttonB->Enabled = false;
 	}
 	private: System::Void radioButtonMnozenie_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
 		groupBoxA->Enabled = true;
@@ -1323,26 +1327,22 @@ private: System::Windows::Forms::Button^  button3;
 		buttonB->Enabled = true;
 		buttonA->Enabled = true;
 		unlockRadioA(radioButtonMnozenie);
-	}
-	private: System::Void radioButtonPotegowanie_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
-		groupBoxA->Enabled = true;
-		groupBoxB->Enabled = true;
-		groupBoxMA->Enabled = true;
-		groupBoxMA2->Enabled = true;
-		unlockRadioA(radioButtonPotegowanie);
-		labelZnak->Text = "^";
+		LabelAW->Text = "";
+
 	}
 	private: System::Void radioButtonTransponowanie_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
 		groupBoxA->Enabled = true;
 		groupBoxB->Enabled = false;
 		groupBoxMA->Enabled = true;
 		unlockRadioA(radioButtonTransponowanie);
+		buttonA->Enabled = true;
 		for (int i = 3; i < 6; i++)
 		{
 			RadioA[i]->Enabled = false;
 		}
 		labelZnak->Text = "";
-
+		buttonB->Enabled = false;
+		LabelAW->Text = "";
 	}
 	private: System::Void radioButtonK2_A_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
 		if (radioButtonTransponowanie->Checked)
@@ -1483,6 +1483,40 @@ private: System::Windows::Forms::Button^  button3;
 				radioButtonK4_B->Enabled = true;
 			}
 		}
+		if (radioButtonTransponowanie->Checked)
+		{
+			if (radioButtonW3_A->Checked && radioButtonK2_A->Checked)
+			{
+				MatrixA(2, 3);
+				MatrixC(3, 2);
+			}
+			if (radioButtonW4_A->Checked && radioButtonK2_A->Checked)
+			{
+				MatrixA(2, 4);
+				MatrixC(4, 2);
+			}
+			if (radioButtonW2_A->Checked && radioButtonK3_A->Checked)
+			{
+				MatrixA(3, 2);
+				MatrixC(2, 3);
+			}
+			if (radioButtonW4_A->Checked && radioButtonK3_A->Checked)
+			{
+				MatrixA(3, 4);
+				MatrixC(4, 3);
+			}
+			if (radioButtonW2_A->Checked && radioButtonK4_A->Checked)
+			{
+				MatrixA(4, 2);
+				MatrixC(2, 4);
+			}
+			if (radioButtonW3_A->Checked && radioButtonK4_A->Checked)
+			{
+				MatrixA(4, 3);
+				MatrixC(3, 4);
+			}
+
+		}
 	}
 
 private: System::Void button3_Click(System::Object^  sender, System::EventArgs^  e) {
@@ -1570,58 +1604,64 @@ private: System::Void button1_Click_1(System::Object^  sender, System::EventArgs
 	MatrixA();
 	MatrixB();
 	MatrixC();
-	if (radioButtonDodawanie->Checked)
+	if (radioButtonDodawanie->Checked || radioButtonOdejmowanie->Checked || radioButtonMnozenie->Checked || radioButtonTransponowanie->Checked)
 	{
-		try
+		if (radioButtonDodawanie->Checked)
 		{
-			Reset(A);
-			Reset(B);
-			MatrixDodaw();
+			try
+			{
+				Reset(A);
+				Reset(B);
+				MatrixDodaw();
+			}
+			catch (Exception^)
+			{
+				LabelAW->Text = "Error!";
+			}
 		}
-		catch (Exception^)
+		if (radioButtonOdejmowanie->Checked)
 		{
-			LabelAW->Text = "Error!";
+			try
+			{
+				Reset(A);
+				Reset(B);
+				MatrixOdej();
+			}
+			catch (Exception^)
+			{
+				LabelAW->Text = "Error!";
+			}
 		}
-	}
-	if (radioButtonOdejmowanie->Checked)
-	{
-		try
+		if (radioButtonMnozenie->Checked)
 		{
-			Reset(A);
-			Reset(B);
-			MatrixOdej();
-		}
-		catch (Exception^)
-		{
-			LabelAW->Text = "Error!";
-		}
-	}
-	if (radioButtonMnozenie->Checked)
-	{
-		try
-		{
-		Reset(A);
-		Reset(B);
-		MatrixMnoz();
+			try
+			{
+				Reset(A);
+				Reset(B);
+				MatrixMnoz();
+			}
+			catch (Exception^)
+			{
+				LabelAW->Text = "Error: Kliknij ponownie 'zatwierdŸ okno' po lewej i prawej stronie";
+			}
 
 		}
-		catch (Exception^)
+		if (radioButtonTransponowanie->Checked)
 		{
-			LabelAW->Text = "Error: Kliknij ponownie 'Zbuduj' po lewej i prawej stronie";
+			try
+			{
+				Reset(A);
+				MatrixTrans();
+			}
+			catch (Exception^)
+			{
+				LabelAW->Text = "Error";
+			}
 		}
-
 	}
-	if (radioButtonTransponowanie->Checked)
+	else
 	{
-		try
-		{
-			Reset(A);
-			MatrixTrans();
-		}
-		catch (Exception^)
-		{
-
-		}
+		LabelAW->Text = "Wybierz dzia³ania";
 	}
 
 }

@@ -410,31 +410,62 @@ void WindowsFormApplication1::Macierze::ShortMatrixMulti(array<RadioButton^, 1> 
 void WindowsFormApplication1::Macierze::MatrixTrans() {
 	if (radioButtonW3_A->Checked && radioButtonK2_A->Checked)
 	{
-		for (int i = 0; i < 2; i++)
+		for (int i = 0; i < 3; i++)
 		{
-
+			for (int j = 0; j < 2; j++)
+			{
+				C[j][i]->Text = A[i][j]->Text;
+			}
 		}
 	}
 	if (radioButtonW4_A->Checked && radioButtonK2_A->Checked)
 	{
-		for (int i = 0; i < 2; i++)
+		for (int i = 0; i < 4; i++)
 		{
-
+			for (int j = 0; j < 2; j++)
+			{
+				C[j][i]->Text = A[i][j]->Text;
+			}
 		}
 	}
-	if (radioButtonW3_A->Checked && radioButtonK2_A->Checked)
+	if (radioButtonW2_A->Checked && radioButtonK3_A->Checked)
 	{
 		for (int i = 0; i < 2; i++)
 		{
-
+			for (int j = 0; j < 3; j++)
+			{
+				C[j][i]->Text = A[i][j]->Text;
+			}
 		}
 	}
-	if (radioButtonW4_A->Checked && radioButtonK2_A->Checked)
+	if (radioButtonW4_A->Checked && radioButtonK3_A->Checked)
+	{
+		for (int i = 0; i < 4; i++)
+		{
+			for (int j = 0; j < 3; j++)
+			{
+				C[j][i]->Text = A[i][j]->Text;
+			}
+		}
+	}	
+	if (radioButtonW2_A->Checked && radioButtonK4_A->Checked)
 	{
 		for (int i = 0; i < 2; i++)
 		{
-
+			for (int j = 0; j < 4; j++)
+			{
+				C[j][i]->Text = A[i][j]->Text;
+			}
 		}
 	}
-
+	if (radioButtonW3_A->Checked && radioButtonK4_A->Checked)
+	{
+		for (int i = 0; i < 3; i++)
+		{
+			for (int j = 0; j < 4; j++)
+			{
+				C[j][i]->Text = A[i][j]->Text;
+			}
+		}
+	}
 }
