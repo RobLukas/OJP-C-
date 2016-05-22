@@ -34,10 +34,10 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Wyznaczniki.cpp">
-      <Filter>Header Files</Filter>
+      <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Macierze.cpp">
-      <Filter>Header Files</Filter>
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -73,6 +73,9 @@
       <Filter>Resource Files</Filter>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuProgram.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Macierze.resx">
       <Filter>Resource Files</Filter>
     </EmbeddedResource>
   </ItemGroup>

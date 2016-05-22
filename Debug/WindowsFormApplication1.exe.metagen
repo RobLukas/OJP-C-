@@ -21,6 +21,10 @@ Class WindowsFormApplication1.Macierze: AutoLayout, AnsiClass, Class, Public, Be
   :System.Windows.Forms.Form
     Void .ctor(System.Windows.Forms.Form): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    unlockRadio(RadioButton): PrivateScope, Public, HideBySig
+    MatrixA(): PrivateScope, Public, HideBySig
+    MatrixB(): PrivateScope, Public, HideBySig
 Class WindowsFormApplication1.Kalkulator: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(System.Windows.Forms.Form): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
