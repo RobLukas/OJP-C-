@@ -1300,7 +1300,7 @@ private: System::ComponentModel::IContainer^  components;
 
 	private: System::Void radioButtonDodawanie_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
 		groupBoxA->Enabled = true;
-		groupBoxB->Enabled = false;
+		groupBoxB->Enabled = true;
 		unlockRadioA(radioButtonDodawanie);
 		buttonA->Enabled = true;
 		labelZnak->Text = "+";
@@ -1310,7 +1310,7 @@ private: System::ComponentModel::IContainer^  components;
 	}
 	private: System::Void radioButtonOdejmowanie_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
 		groupBoxA->Enabled = true;
-		groupBoxB->Enabled = false;
+		groupBoxB->Enabled = true;
 		groupBoxMA->Enabled = true;
 		groupBoxMA2->Enabled = true;
 		unlockRadioA(radioButtonOdejmowanie);
