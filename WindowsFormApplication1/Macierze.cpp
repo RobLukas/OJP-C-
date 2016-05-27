@@ -247,7 +247,7 @@ void WindowsFormApplication1::Macierze::MatrixMnoz() {
 			for (int j = 0; j < 3; j++)//kolumna
 			{
 				s = 0;
-				for (int k = 0; k < 3; k++)
+				for (int k = 0; k < 2; k++)
 				{
 					if (C[i][j]->Enabled)
 					{
@@ -265,7 +265,7 @@ void WindowsFormApplication1::Macierze::MatrixMnoz() {
 			for (int j = 0; j < 4; j++)//kolumna
 			{
 				s = 0;
-				for (int k = 0; k < 4; k++)
+				for (int k = 0; k < 3; k++)
 				{
 					if (C[i][j]->Enabled)
 					{
@@ -301,7 +301,7 @@ void WindowsFormApplication1::Macierze::MatrixMnoz() {
 			for (int j = 0; j < 3; j++)//kolumna
 			{
 				s = 0;
-				for (int k = 0; k < 3; k++)
+				for (int k = 0; k < 2; k++)
 				{
 					if (C[i][j]->Enabled)
 					{
@@ -319,7 +319,7 @@ void WindowsFormApplication1::Macierze::MatrixMnoz() {
 			for (int j = 0; j < 4; j++)//kolumna
 			{
 				s = 0;
-				for (int k = 0; k < Double::Parse(RadioB[2]->Text); k++)
+				for (int k = 0; k < 4; k++)
 				{
 					if (C[i][j]->Enabled)
 					{
@@ -373,7 +373,7 @@ void WindowsFormApplication1::Macierze::MatrixMnoz() {
 			for (int j = 0; j < 4; j++)//kolumna
 			{
 				s = 0;
-				for (int k = 0; k < 4; k++)
+				for (int k = 0; k < 3; k++)
 				{
 					if (C[i][j]->Enabled)
 					{
@@ -386,7 +386,6 @@ void WindowsFormApplication1::Macierze::MatrixMnoz() {
 	}
 
 }
-
 
 void WindowsFormApplication1::Macierze::ShortMatrixMulti(array<RadioButton^, 1> ^ RadioAA, array<RadioButton^, 1> ^ RadioBB) {
 	int s;
@@ -465,6 +464,22 @@ void WindowsFormApplication1::Macierze::MatrixTrans() {
 			for (int j = 0; j < 4; j++)
 			{
 				C[j][i]->Text = A[i][j]->Text;
+			}
+		}
+	}
+}
+
+void WindowsFormApplication1::Macierze::ResetOknaEnabFalse() {
+
+	for (int i = 0; i < 4; i++)
+	{
+		for (int j = 0; j < 4; j++)
+		{
+			if ((A[i][j]->Text != "" || B[i][j]->Text != "" || C[i][j]->Text != "") && (A[i][j]->Enabled == false || B[i][j]->Enabled == false || C[i][j]->Enabled == false))
+			{
+				A[i][j]->Text = "";
+				B[i][j]->Text = "";
+				C[i][j]->Text = "";
 			}
 		}
 	}

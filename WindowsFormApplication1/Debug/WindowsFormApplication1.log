@@ -1,14 +1,14 @@
 ﻿cl : Command line warning D9035: option 'clr:pure' has been deprecated and will be removed in a future release
   Macierze.cpp
-d:\projects\ojp\windowsformapplication1\Macierze.h(1528): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-d:\projects\ojp\windowsformapplication1\Macierze.h(1532): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-d:\projects\ojp\windowsformapplication1\Macierze.h(1536): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-d:\projects\ojp\windowsformapplication1\Macierze.h(1540): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-d:\projects\ojp\windowsformapplication1\Macierze.h(1544): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-d:\projects\ojp\windowsformapplication1\Macierze.h(1548): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-d:\projects\ojp\windowsformapplication1\Macierze.h(1552): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-d:\projects\ojp\windowsformapplication1\Macierze.h(1556): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-d:\projects\ojp\windowsformapplication1\Macierze.h(1560): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\projects\ojp-c++\windowsformapplication1\Macierze.h(1504): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\projects\ojp-c++\windowsformapplication1\Macierze.h(1508): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\projects\ojp-c++\windowsformapplication1\Macierze.h(1512): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\projects\ojp-c++\windowsformapplication1\Macierze.h(1516): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\projects\ojp-c++\windowsformapplication1\Macierze.h(1520): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\projects\ojp-c++\windowsformapplication1\Macierze.h(1524): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\projects\ojp-c++\windowsformapplication1\Macierze.h(1528): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\projects\ojp-c++\windowsformapplication1\Macierze.h(1532): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\projects\ojp-c++\windowsformapplication1\Macierze.h(1536): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
 Macierze.cpp(236): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
 Macierze.cpp(254): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
 Macierze.cpp(272): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
@@ -18,26 +18,26 @@ Macierze.cpp(326): warning C4244: '=': conversion from 'double' to 'int', possib
 Macierze.cpp(344): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
 Macierze.cpp(362): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
 Macierze.cpp(380): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-Macierze.cpp(402): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+Macierze.cpp(401): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
   MenuProgram.cpp
-d:\projects\ojp\windowsformapplication1\Macierze.h(1528): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-d:\projects\ojp\windowsformapplication1\Macierze.h(1532): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-d:\projects\ojp\windowsformapplication1\Macierze.h(1536): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-d:\projects\ojp\windowsformapplication1\Macierze.h(1540): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-d:\projects\ojp\windowsformapplication1\Macierze.h(1544): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-d:\projects\ojp\windowsformapplication1\Macierze.h(1548): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-d:\projects\ojp\windowsformapplication1\Macierze.h(1552): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-d:\projects\ojp\windowsformapplication1\Macierze.h(1556): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-d:\projects\ojp\windowsformapplication1\Macierze.h(1560): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\projects\ojp-c++\windowsformapplication1\Macierze.h(1504): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\projects\ojp-c++\windowsformapplication1\Macierze.h(1508): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\projects\ojp-c++\windowsformapplication1\Macierze.h(1512): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\projects\ojp-c++\windowsformapplication1\Macierze.h(1516): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\projects\ojp-c++\windowsformapplication1\Macierze.h(1520): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\projects\ojp-c++\windowsformapplication1\Macierze.h(1524): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\projects\ojp-c++\windowsformapplication1\Macierze.h(1528): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\projects\ojp-c++\windowsformapplication1\Macierze.h(1532): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\projects\ojp-c++\windowsformapplication1\Macierze.h(1536): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
   WindowsFormApplication1.cpp
-d:\projects\ojp\windowsformapplication1\Macierze.h(1528): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-d:\projects\ojp\windowsformapplication1\Macierze.h(1532): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-d:\projects\ojp\windowsformapplication1\Macierze.h(1536): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-d:\projects\ojp\windowsformapplication1\Macierze.h(1540): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-d:\projects\ojp\windowsformapplication1\Macierze.h(1544): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-d:\projects\ojp\windowsformapplication1\Macierze.h(1548): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-d:\projects\ojp\windowsformapplication1\Macierze.h(1552): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-d:\projects\ojp\windowsformapplication1\Macierze.h(1556): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-d:\projects\ojp\windowsformapplication1\Macierze.h(1560): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\projects\ojp-c++\windowsformapplication1\Macierze.h(1504): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\projects\ojp-c++\windowsformapplication1\Macierze.h(1508): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\projects\ojp-c++\windowsformapplication1\Macierze.h(1512): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\projects\ojp-c++\windowsformapplication1\Macierze.h(1516): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\projects\ojp-c++\windowsformapplication1\Macierze.h(1520): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\projects\ojp-c++\windowsformapplication1\Macierze.h(1524): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\projects\ojp-c++\windowsformapplication1\Macierze.h(1528): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\projects\ojp-c++\windowsformapplication1\Macierze.h(1532): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\projects\ojp-c++\windowsformapplication1\Macierze.h(1536): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
   Generating Code...
-  WindowsFormApplication1.vcxproj -> D:\Projects\OJP\Debug\WindowsFormApplication1.exe
+  WindowsFormApplication1.vcxproj -> C:\Projects\OJP-C++\Debug\WindowsFormApplication1.exe
